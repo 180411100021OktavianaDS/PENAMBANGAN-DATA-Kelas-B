@@ -52,88 +52,125 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#statistik-deskriptif">Statistik Deskriptif</a></li>
-            <li><a href="#project-layout">Project layout</a></li>
+        <li class="main active"><a href="#mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</a></li>
+        <li class="main "><a href="#mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</a></li>
+            <li><a href="#overlay-metric">Overlay Metric</a></li>
+            <li><a href="#value-difference-metric-vdm">Value Difference Metric (VDM)</a></li>
+            <li><a href="#minimum-risk-metric-mrm">Minimum Risk Metric (MRM)</a></li>
+        <li class="main "><a href="#mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</a></li>
+        <li class="main "><a href="#menghitung-jarak-tipe-campuran">Menghitung Jarak Tipe Campuran</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="statistik-deskriptif">Statistik Deskriptif</h1>
-<p>Statistik deskriptif adalah salah satu bagian dari ilmu statistika yang berhubungan dengan aktivitas penghimpunan, penataan, peringkasan dan penyajian data dengan harapan agar data lebih bermakna, mudah dibaca dan mudah dipahami oleh pengguna data. Statistik deskriptif hanya sebatas memberikan deskripsi atau gambaran umum tentang karakteristik objek yang diteliti tanpa maksud untuk melakukan generalisasi sampel terhadap populasi.</p>
-<p>​   Kegiatan dalam statistik deskriptif meliputi pengumpulan, pengelompokan dan pengolahan data yang selanjutnya akan menghasilkan ukuran-ukuran statistik seperti frekuensi, pemusatan data, penyebaran data, kecenderungan suatu gugus data dan lain-lain. Selain itu, agar data lebih mudah dibaca dan dipahami maka data dapat diringkas dalam bentuk tabulasi atau disajikan dalam bentuk grafik atau diagram, beberapa yang akan kita bahas yaitu :</p>
+<h2 id="mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</h2>
+<h2 id="mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</h2>
+<h3 id="overlay-metric"><em>Overlay Metric</em></h3>
+<p>Ketika semua atribut adalah bertipe nominal, ukuran jarak yang paling sederhana adalah dengan Ovelay Metric (OM) yang dinyatakan dengan</p>
+<p>d(x,y)=n∑i=1δ(ai(x),ai(y))d(x,y)=∑i=1nδ(ai(x),ai(y))</p>
+<p>dimana nn adalah banyaknya atribut, ai(x)ai(x) dan ai(y)ai(y) adalah nilai atribut ke ii yaitu AiAi dari masing masing objek xx dan yy, δ (ai(x),ai(y))δ (ai(x),ai(y)) adalah 0 jika ai(x)=ai(y)ai(x)=ai(y) dan 1 jika sebaliknya.</p>
+<p>OM banyak digunakan oleh instance-based learning dan locally weighted learning. Jelas sekali , ini sedikit beruk untuk mengukur jarak antara masing-masing pasangan sample, karena gagal memanfaatkan tambahan informasi yang diberikan oleh nilai atribut nominal yang bisa membantu dalam generalisasi.</p>
+<h3 id="value-difference-metric-vdm"><em>Value Difference Metric (VDM)</em></h3>
+<p>VDM dikenalkan oleh Standfill and Waltz, versi sederhana dari VDM tanpa skema pembobotan didefinsisikan dengan</p>
+<p>d(x,y)=n∑i=1C∑c=1|P(c|ai(x))−P(c|ai(y))|d(x,y)=∑i=1n∑c=1C|P(c|ai(x))−P(c|ai(y))|</p>
+<p>dimana CCadalah banyaknya kelas, P(c|ai(x))P(c|ai(x)) adalah probabilitas bersyarat dimana kelas xx adalah cc dari atribut AiAi, yang memiliki nilai ai(x)ai(x), P(c|ai(y))P(c|ai(y)) adalah probabilitas bersyarat dimana kelas yy adalah cc dengan atribut AiAi memiliki nilai ai(y)ai(y)</p>
+<p>VDM mengasumsikan bahwa dua nilai dari atribut adalah lebih dekat jika memiliki klasifikasi sama. Pendekatan lain berbasi probabilitas adalah SFM (Short and Fukunaga Metric) yang kemudian dikembangkan oleh Myles dan Hand dan didefinisikan dengan</p>
+<p>d(x,y)=C∑c=1|P(c|x)−P(c|y)|d(x,y)=∑c=1C|P(c|x)−P(c|y)|</p>
+<p>diman probabilitas keanggotaan kelas diestimasi dengan P(c|x)P(c|x) dan P(c|y)P(c|y) didekati dengan Naive Bayes,</p>
+<h3 id="minimum-risk-metric-mrm"><em>Minimum Risk Metric (MRM)</em></h3>
+<p>Ukuran ini dipresentasikan oleh Blanzieri and Ricci, berbeda dari SFM yaitu meminimumkan selisih antara kesalahan berhingga dan kesalahan asymtotic. MRM meminimumkan risk of misclassification yang didefinisikan dengan</p>
+<p>d(x,y)=C∑c=1P(c|x)(1−P(c|y))</p>
+<h2 id="mengukur-jarak-tipe-ordinal"><strong>Mengukur Jarak Tipe Ordinal</strong></h2>
+<p>Nilai-nilai atribut ordinal memiliki urutan atau peringkat, namun besarnya antara nilai-nilai berturut-turut tidak diketahui. Contohnya tingkatan kecil, sedang, besar untuk atribut ukuran. Atribut ordinal juga dapat diperoleh dari diskritisasi atribut numerik dengan membuat rentang nilai ke dalam sejumlah kategori tertentu. Kategori-kategori ini disusun dalam peringkat. Yaitu, rentang atribut numerik dapat dipetakan ke atribut ordinal ff yang memiliki MfMf state. Misalnya, kisaran suhu atribut skala-skala (dalam Celcius)dapat diatur ke dalam status berikut: −30 hingga −10, −10 hingga 10, 10 hingga 30, masing-masing mewakili kategori suhu dingin, suhu sedang, dan suhu hangat. MM adalah jumlah keadaan yang dapat dilakukan oleh atribut ordinalmemiliki. State ini menentukan peringkat 1,...,Mf1,...,Mf</p>
+<p>Perlakuan untuk atribut ordinal adalah cukup sama dengan atribut numerik ketika menghitung disimilarity antara objek. Misalkan ff adalah atribut-atribut dari atribut ordinal dari nn objek. Menghitung disimilarity terhadap f fitur sebagai berikut:</p>
+<ul>
+<li>Nilai ff untuk objek ke-ii adalah xifxif, dan ff memiliki MfMf status urutan , mewakili peringkat 1,..,Mf1,..,Mf Ganti setiap xifxif dengan peringkatnya, rif∈{1...Mf}rif∈{1...Mf}</li>
+<li>Karena setiap atribut ordinal dapat memiliki jumlah state yang berbeda, diperlukan untuk memetakan rentang setiap atribut ke [0,0, 1.0] sehingga setiap atribut memiliki bobot yang sama. Perl melakukan normalisasi data dengan mengganti peringkat rifrif denganzif=rif−1Mf−1zif=rif−1Mf−1</li>
+<li>Dissimilarity kemudian dihitung dengan menggunakan ukuran jarak seperti atribut numerik dengan data yang baru setelah ditransformasi $ z _ { i f }$</li>
+</ul>
+<h2 id="menghitung-jarak-tipe-campuran"><strong>Menghitung Jarak Tipe Campuran</strong></h2>
+<p>Menghitung ketidaksamaan antara objek dengan atribut campuran yang berupa nominal, biner simetris, biner asimetris, numerik, atau ordinal yang ada pada kebanyakan databasae dapat dinyatakan dengan memproses semua tipe atribut secara bersamaan. Salah satu teknik tersebut menggabungkan atribut yang berbeda ke dalam matriks ketidaksamaan tunggal dan menyatakannya dengan skala interval antar [0,0,1.0][0,0,1.0]. Misalkan data berisi atribut pp tipe campuran. Ketidaksamaan (disimilarity ) antara objek ii dan jj dinyatakan dengan</p>
+<p>d(i,j)=∑pf=1δ(f)ijd(f)ij∑pf=1δ(f)ijd(i,j)=∑f=1pδij(f)dij(f)∑f=1pδij(f)</p>
+<p>dimana δfij=0δijf=0 - jika xifxif atau xjfxjf adalah hilang (i.e., tidak ada pengukuran dari atribut f untuk objek ii atau objek jj)</p>
+<ul>
+<li>jika xif=xjf=0xif=xjf=0 dan</li>
+<li>atribut ff adalah binary asymmetric,</li>
+</ul>
+<p>selain itu δfij=1δijf=1</p>
+<p>Kontribusi dari atribut ff untuk dissimilarity antara i dan j (yaitu.dfijdijf) dihitung bergantung pada tipenya,</p>
 <ul>
 <li>
-<p>Rata-rata</p>
+<p>Jika ff adalah numerik, dfij=∥xif−xjf∥maxhxhf−minhxhfdijf=‖xif−xjf‖maxhxhf−minhxhf, di mana h menjalankan semua nilai objek yang tidak hilang untuk atribut f</p>
 </li>
 <li>
-<p>Median</p>
+<p>Jika ff adalah nominal atau binary,$d_{ij}^{f}=0 $jika xif=xjfxif=xjf, sebaliknya dfij=1dijf=1</p>
 </li>
 <li>
-<p>Modus</p>
-</li>
-<li>
-<p>Variansi</p>
-</li>
-<li>
-<p>Standar Deviasi</p>
-</li>
-<li>
-<p>Range </p>
-</li>
-<li>
-<p>Quartil</p>
-</li>
-<li>
-<p>Skewness</p>
+<p>Jika ff adalah ordinal maka hitung rangking rifrif dan zif=rif−1Mf−1zif=rif−1Mf−1 , dan perlakukan zifzif sebagai numerik.</p>
 </li>
 </ul>
-<p>https://www.rumusstatistik.com/2017/02/statistik-deskriptif.html</p>
-<p>https://mulaab.github.io/datamining/memahami-data/</p>
-<p>###### 1. Rata-rata</p>
-<p><em>Rata-rata</em> adalah nilai yang mewakili sekelompok data. Rata-rata diperoleh dari penjumlahan seluruh nilai data dibagi dengan banyaknya data.</p>
-<p>x=∑Ni1xiN/ N</p>
-<p>x= x1+x2+x3+.....Xn / N</p>
-<p><code>python
-  #contoh rumus mencari data rata-rata atau mean pada python
-  print("rata-rata   ",df['NilaiPreTest'].mean())</code></p>
-<p>###### 2. Median</p>
-<p><em>Median</em> adalah nilai yang terletak di tengah dari data yang nilainya telah diurutkan. Bayaknya data di bawah median sama dengan banyaknya data di atas median. rumus:</p>
-<p>Me=xij+(n2−fkijfi)p=xij+(n2−fkijfi)p</p>
-<p>Me= median xij= batas bawah median n= jumlah data fkij= frekuensi kumulatif data di bawah kelas median fi= frekuensi data pada kelas median p= panjang interval kelas </p>
-<p>###### 3. Modus</p>
-<p>Modus adalah nilai yang sering muncul dalam sekelompok data.</p>
-<p>###### 4. Variansi dan standart Variansi</p>
-<p><em>Varian</em> adalah rata-rata jarak kuadrat antara data ke rata-rata.</p>
-<p>s^2 = \frac{1}{n-1}\sum_{i=1}^{n}\left (x_i-\bar {x} \right )^2<em>s</em>2=<em>n</em>−11<em>i</em>=1∑<em>n</em>(<em>x</em><em>i</em>−<em>x</em>ˉ)2_</p>
-<p>_Standar Deviasi (Simpangan Baku) merupakan akar kuadrat dari varian.</p>
-<p>s = \sqrt{ \frac{1}{n-1}\sum_{i=1}^{n}\left (x_i-\bar {x} \right )^2}<em>s</em>=<em>n</em>−11<em>i</em>=1∑<em>n</em>(<em>x</em><em>i</em>−<em>x</em>ˉ)2</p>
-<p><code>python
-  #rumus mencari standart variansi
-  ["std()"]+["{:.2f}".format(df[col].std()) for col in df.columns]</code></p>
-<p>###### 5. Range</p>
-<p><em>Jangkauan (Range)</em> adalah ukuran dari selisih nilai maksimum dengan nilai minimum yang ada dalam sekelompok data.R = x_{max} - x_{min} <em>R</em>=xmax−xmin</p>
-<p><code>python
-      ["min()"]+[df[col].min() for col in df.columns],
-      ["max()"]+[df[col].max() for col in df.columns],</code></p>
-<p>###### 6. Quartil</p>
-<p>​ Kuartil memberikan gambaran pusat distribus, penyebaran, dan bentuk distribusi. Kuartil satu, dilambangkan oleh Q1, adalah persentil ke-25. Nilai ini menunjukan 25% terendah dari data. Kuartil ketiga, dilambangkan oleh Q3, adalah persentil ke-75 - itu memisahkan data 75% dari terendah data (atau 25% dari tertinggi data. Kuartil kedua adalah persentil ke-50 atau median dari distribusi data.</p>
-<p>Jarak antara kuartil pertama dan ketiga adalah ukuran yang menyatakan rentang yang dicakup oleh bagian tengah data. Jarak ini disebut rentang interkuartil (IQR) dan dinyatakan dengan</p>
-<p>IQR=Q3−Q1IQR=Q3−Q1</p>
-<p>Dengan ukuran a kuartil Q1 dan Q3, dan median kita dapat mengidentifikasikan ada tidaknya pencilan (outlier) pada suatu data. Data pencilan atau outlier nilai data biasanya ada di setidaknya 1,5 × IQR di atas kuartil ketiga atau di bawah kuartil pertama</p>
-<p>Karena Q1, median, dan Q3 tidak berisi informasi tentang titik akhir (mis., Ekor) data, ringkasan yang lebih lengkap dari bentuk distribusi dapat diperoleh dengan memberikan nilai data terendah dan tertinggi juga. Ini dikenal sebagai ringkasan lima angka. Ringkasan lima nomor distribusi terdiri dari median (Q2), kuartil Q1 dan Q3, dan data terkecil dan terbesar( Minimum, Q1, Median, Q3, Maksimum).</p>
 <p>```python
-   ["q1()"]+[df[col].quantile(0.25) for col in df.columns],
-      ["q2()"]+[df[col].quantile(0.50) for col in df.columns],
-      ["q3()"]+[df[col].quantile(0.75) for col in df.columns],</p>
-<p>```</p>
-<p>###### 7. Skewness</p>
-<p>Derajat distorsi dari kurva lonceng simetris atau distribusi normal. Ini mengukur kurangnya simetri dalam distribusi data Untuk menghitung derajat distorisi dapat menggunakan Koefisien Kemencengan Pearson yang diperoleh dengan menggunakan nilai selisih rata-rata dengan modus dibagi simpangan baku. Koefisien Kemencengan Pearson dirumuskan sebagai berikut</p>
-<p>sk=¯¯¯¯¯X−Mos</p>
-<p><code>python
-   ["skew()"]+["{:.2f}".format(df[col].skew()) for col in df.columns],</code></p>
-<h2 id="project-layout">Project layout</h2>
-<pre><code class="python">#Code pada python untuk 
-</code></pre></div>
+  #contoh penerapan untuk mengukur jarak pada data</p>
+<p>import pandas as pd
+  df = pd.read_csv('tugaspd2.csv',nrows=5)
+  df
+  binary=[6]
+  num=[0,1,2,3,4,5]
+  from IPython.display import HTML, display
+  import tabulate
+  table=[
+      ["Data"]+["Jarak"]+["Numeric"]+["Binary"],
+      ["v1-v2"]+[0]+[0]+[0],
+      ["v1-v3"]+[0]+[0]+[0],
+      ["v2-v3"]+[0]+[0]+[0],
+      ["v3-v4"]+[0]+[0]+[0],
+      ]</p>
+<p>display(HTML(tabulate.tabulate(table, tablefmt='html')))</p>
+<p>def chordDist(v1,v2,jnis):
+      jmlh=0
+      normv1=0
+      normv2=0
+      for x in range (len(jnis)):
+          normv1=normv1+(int(df.values.tolist()[v1][jnis[x]])<strong>2)
+          normv2=normv2+(int(df.values.tolist()[v2][jnis[x]])</strong>2)
+          jmlh=jmlh+(int(df.values.tolist()[v1][jnis[x]])<em>int(df.values.tolist()[v2][jnis[x]]))
+      return ((2-(2</em>jmlh/(normv1<em>normv2)))</em>*0.5)</p>
+<p>from IPython.display import HTML, display
+  import tabulate
+  table=[
+      ["Data"]+["Jarak"]+["Numeric"]+["Binary"],
+      ["v1-v2"]+[0]+[chordDist(0,1,num)]+[0],
+      ["v1-v3"]+[0]+[chordDist(0,2,num)]+[0],
+      ["v2-v3"]+[0]+[chordDist(1,2,num)]+[0],
+      ["v3-v4"]+[0]+[chordDist(2,3,num)]+[0],
+  ]</p>
+<p>display(HTML(tabulate.tabulate(table, tablefmt='html')))</p>
+<p>def binaryDist(v1,v2,jnis):
+      q=0
+      r=0
+      s=0
+      t=0
+      for x in range (len(jnis)):
+          if (int(df.values.tolist()[v1][jnis[x]]))==1 and (int(df.values.tolist()[v2][jnis[x]]))==1:
+              q=q+1
+          elif (int(df.values.tolist()[v1][jnis[x]]))==1 and (int(df.values.tolist()[v2][jnis[x]]))==2:
+              r=r+1
+          elif (int(df.values.tolist()[v1][jnis[x]]))==2 and (int(df.values.tolist()[v2][jnis[x]]))==1:
+              s=s+1
+          else:
+              t=t+1
+      return ((r+s)/(q+r+s+t))</p>
+<p>from IPython.display import HTML, display
+  import tabulate
+  table=[
+      ["Data"]+["Jarak"]+["Numeric"]+["Binary"],
+      ["v1-v2"]+[0]+[chordDist(0,1,num)]+[binaryDist(0,1,binary)],
+      ["v1-v3"]+[0]+[chordDist(0,2,num)]+[binaryDist(0,2,binary)],
+      ["v2-v3"]+[0]+[chordDist(1,2,num)]+[binaryDist(1,2,binary)],
+      ["v3-v4"]+[0]+[chordDist(2,3,num)]+[binaryDist(2,3,binary)],
+      ]</p>
+<p>display(HTML(tabulate.tabulate(table, tablefmt='html')))
+  ```</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -216,5 +253,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-09-11 18:32:05
+Build Date UTC : 2019-09-13 09:36:08
 -->
