@@ -52,11 +52,25 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#statistik-deskriptif">Statistik Deskriptif</a></li>
+        <li class="main active"><a href="#penambangan-data">PENAMBANGAN DATA</a></li>
+        <li class="main "><a href="#statistik-deskriptif">Statistik Deskriptif</a></li>
+            <li><a href="#3-modus">3.  Modus</a></li>
+            <li><a href="#4-variansi-dan-standart-variansi">4. Variansi dan standart Variansi</a></li>
+            <li><a href="#5-range">5. Range</a></li>
+            <li><a href="#6-quartil">6. Quartil</a></li>
+            <li><a href="#7-skewness">7. Skewness</a></li>
+        <li class="main "><a href="#mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</a></li>
+            <li><a href="#mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</a></li>
+            <li><a href="#overlay-metric">Overlay Metric</a></li>
+            <li><a href="#value-difference-metric-vdm">Value Difference Metric (VDM)</a></li>
+            <li><a href="#minimum-risk-metric-mrm">Minimum Risk Metric (MRM)</a></li>
+            <li><a href="#mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</a></li>
+            <li><a href="#selection-feature">SELECTION FEATURE</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
+<h1 id="penambangan-data">PENAMBANGAN DATA</h1>
 <h1 id="statistik-deskriptif">Statistik Deskriptif</h1>
 <p>Statistik deskriptif adalah salah satu bagian dari ilmu statistika yang berhubungan dengan aktivitas penghimpunan, penataan, peringkasan dan penyajian data dengan harapan agar data lebih bermakna, mudah dibaca dan mudah dipahami oleh pengguna data. Statistik deskriptif hanya sebatas memberikan deskripsi atau gambaran umum tentang karakteristik objek yang diteliti tanpa maksud untuk melakukan generalisasi sampel terhadap populasi.</p>
 <p>​   Kegiatan dalam statistik deskriptif meliputi pengumpulan, pengelompokan dan pengolahan data yang selanjutnya akan menghasilkan ukuran-ukuran statistik seperti frekuensi, pemusatan data, penyebaran data, kecenderungan suatu gugus data dan lain-lain. Selain itu, agar data lebih mudah dibaca dan dipahami maka data dapat diringkas dalam bentuk tabulasi atau disajikan dalam bentuk grafik atau diagram, beberapa yang akan kita bahas yaitu :</p>
@@ -86,78 +100,96 @@
 <p>Skewness</p>
 </li>
 </ul>
-<p>https://www.rumusstatistik.com/2017/02/statistik-deskriptif.html</p>
-<p>https://mulaab.github.io/datamining/memahami-data/</p>
-<p>###### 1. Rata-rata</p>
-<p><em>Rata-rata</em> adalah nilai yang mewakili sekelompok data. Rata-rata diperoleh dari penjumlahan seluruh nilai data dibagi dengan banyaknya data.</p>
-<p>x=∑Ni1xiN/ N</p>
-<p>x= x1+x2+x3+.....Xn / N</p>
-<p><code>python
-  #contoh rumus mencari data rata-rata atau mean pada python
-  print("rata-rata   ",df['NilaiPreTest'].mean())</code></p>
-<p>###### 2. Median</p>
-<p><em>Median</em> adalah nilai yang terletak di tengah dari data yang nilainya telah diurutkan. Bayaknya data di bawah median sama dengan banyaknya data di atas median. rumus:</p>
-<p>Me=xij+(n2−fkijfi)p=xij+(n2−fkijfi)p</p>
-<p>Me= median xij= batas bawah median n= jumlah data fkij= frekuensi kumulatif data di bawah kelas median fi= frekuensi data pada kelas median p= panjang interval kelas </p>
-<p>###### 3. Modus</p>
+<p>## 1. Rata - rata</p>
+<p>​ Rata-rata adalah nilai yang mewakili sekelompok data. Rata-rata diperoleh dari penjumlahan seluruh nilai data dibagi dengan banyaknya data.</p>
+<p>## 2. Median</p>
+<p>​ Untuk data miring (asimetris), ukuran pusat data yang lebih baik adalah median, yang merupakan nilai tengah dalam satu set nilai data yang diurutkan. Ini adalah nilai yang memisahkan separuh data yang lebih tinggi dari data tersebut dan sebagian data yang lebih rendah dari data tersebut. Dalam probabilitas dan statistik, median umumnya berlaku untuk data numerik; namun, kami dapat memperluas konsep menjadi data ordinal. Misalkan kumpulan N data yang diberikan untuk atribut X diurutkan dalam urutan naik. Jika N ganjil, maka median adalah nilai tengah dari data yang ordinal. Jika N adalah genap, maka mediannya tidak unik; dihitung dengan rata rata dari nilai </p>
+<h2 id="3-modus">3.  Modus</h2>
 <p>Modus adalah nilai yang sering muncul dalam sekelompok data.</p>
-<p>###### 4. Variansi dan standart Variansi</p>
+<h2 id="4-variansi-dan-standart-variansi">4. Variansi dan standart Variansi</h2>
 <p><em>Varian</em> adalah rata-rata jarak kuadrat antara data ke rata-rata.</p>
-<p>s^2 = \frac{1}{n-1}\sum_{i=1}^{n}\left (x_i-\bar {x} \right )^2<em>s</em>2=<em>n</em>−11<em>i</em>=1∑<em>n</em>(<em>x</em><em>i</em>−<em>x</em>ˉ)2_</p>
-<p>_Standar Deviasi (Simpangan Baku) merupakan akar kuadrat dari varian.</p>
-<p>s = \sqrt{ \frac{1}{n-1}\sum_{i=1}^{n}\left (x_i-\bar {x} \right )^2}<em>s</em>=<em>n</em>−11<em>i</em>=1∑<em>n</em>(<em>x</em><em>i</em>−<em>x</em>ˉ)2</p>
-<p><code>python
-  #rumus mencari standart variansi
-  ["std()"]+["{:.2f}".format(df[col].std()) for col in df.columns]</code></p>
-<p>###### 5. Range</p>
+<h2 id="5-range">5. Range</h2>
 <p><em>Jangkauan (Range)</em> adalah ukuran dari selisih nilai maksimum dengan nilai minimum yang ada dalam sekelompok data.R = x_{max} - x_{min} <em>R</em>=xmax−xmin</p>
-<p><code>python
-      ["min()"]+[df[col].min() for col in df.columns],
-      ["max()"]+[df[col].max() for col in df.columns],</code></p>
-<p>###### 6. Quartil</p>
-<p>​ Kuartil memberikan gambaran pusat distribus, penyebaran, dan bentuk distribusi. Kuartil satu, dilambangkan oleh Q1, adalah persentil ke-25. Nilai ini menunjukan 25% terendah dari data. Kuartil ketiga, dilambangkan oleh Q3, adalah persentil ke-75 - itu memisahkan data 75% dari terendah data (atau 25% dari tertinggi data. Kuartil kedua adalah persentil ke-50 atau median dari distribusi data.</p>
-<p>Jarak antara kuartil pertama dan ketiga adalah ukuran yang menyatakan rentang yang dicakup oleh bagian tengah data. Jarak ini disebut rentang interkuartil (IQR) dan dinyatakan dengan</p>
-<p>IQR=Q3−Q1IQR=Q3−Q1</p>
-<p>Dengan ukuran a kuartil Q1 dan Q3, dan median kita dapat mengidentifikasikan ada tidaknya pencilan (outlier) pada suatu data. Data pencilan atau outlier nilai data biasanya ada di setidaknya 1,5 × IQR di atas kuartil ketiga atau di bawah kuartil pertama</p>
-<p>Karena Q1, median, dan Q3 tidak berisi informasi tentang titik akhir (mis., Ekor) data, ringkasan yang lebih lengkap dari bentuk distribusi dapat diperoleh dengan memberikan nilai data terendah dan tertinggi juga. Ini dikenal sebagai ringkasan lima angka. Ringkasan lima nomor distribusi terdiri dari median (Q2), kuartil Q1 dan Q3, dan data terkecil dan terbesar( Minimum, Q1, Median, Q3, Maksimum).</p>
-<p>```python
-   ["q1()"]+[df[col].quantile(0.25) for col in df.columns],
-      ["q2()"]+[df[col].quantile(0.50) for col in df.columns],
-      ["q3()"]+[df[col].quantile(0.75) for col in df.columns],</p>
-<p>```</p>
-<p>###### 7. Skewness</p>
-<p>Derajat distorsi dari kurva lonceng simetris atau distribusi normal. Ini mengukur kurangnya simetri dalam distribusi data Untuk menghitung derajat distorisi dapat menggunakan Koefisien Kemencengan Pearson yang diperoleh dengan menggunakan nilai selisih rata-rata dengan modus dibagi simpangan baku. Koefisien Kemencengan Pearson dirumuskan sebagai berikut</p>
-<p>sk=¯¯¯¯¯X−Mos</p>
-<p><code>python
-   ["skew()"]+["{:.2f}".format(df[col].skew()) for col in df.columns],</code></p>
-<pre><code class="python">#Code pada python keseluruhan
-
-from scipy import stats
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-import pandas as pd
-
-df = pd.read_csv('tugasPD1.csv')
-df
-from IPython.display import HTML, display
-import tabulate
-table=[
-    [&quot;method&quot;]+[x for x in df.columns],
-    [&quot;describe()&quot;]+['&lt;pre&gt;'+str(df[col].describe())+'&lt;/pre&gt;' for col in df.columns],
-    [&quot;count()&quot;]+[df[col].count() for col in df.columns],
-    [&quot;mean()&quot;]+[df[col].mean() for col in df.columns],
-    [&quot;std()&quot;]+[&quot;{:.2f}&quot;.format(df[col].std()) for col in df.columns],
-    [&quot;min()&quot;]+[df[col].min() for col in df.columns],
-    [&quot;max()&quot;]+[df[col].max() for col in df.columns],
-    [&quot;q1()&quot;]+[df[col].quantile(0.25) for col in df.columns],
-    [&quot;q2()&quot;]+[df[col].quantile(0.50) for col in df.columns],
-    [&quot;q3()&quot;]+[df[col].quantile(0.75) for col in df.columns],
-    [&quot;skew()&quot;]+[&quot;{:.2f}&quot;.format(df[col].skew()) for col in df.columns],
-]
-
-display(HTML(tabulate.tabulate(table, tablefmt='html')))
-</code></pre></div>
+<h2 id="6-quartil">6. Quartil</h2>
+<p>Kuartil memberikan gambaran pusat distribus, penyebaran, dan bentuk distribusi. Kuartil satu, dilambangkan oleh Q1, adalah persentil ke-25. Nilai ini menunjukan 25% terendah dari data. Kuartil ketiga, dilambangkan oleh Q3, adalah persentil ke-75 - itu memisahkan data 75% dari terendah data (atau 25% dari tertinggi data. </p>
+<h2 id="7-skewness">7. Skewness</h2>
+<p>​   Derajat distorsi dari kurva lonceng simetris atau distribusi normal. Ini mengukur kurangnya simetri dalam distribusi data Untuk menghitung derajat distorisi dapat menggunakan Koefisien Kemencengan Pearson yang diperoleh dengan menggunakan nilai selisih rata-rata dengan modus dibagi simpangan baku.</p>
+<p><img alt="1569423066938" src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1569423066938.png" /></p>
+<p><img alt="1569423153345" src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1569423153345.png" /></p>
+<p><img alt="1569423251334" src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1569423251334.png" /></p>
+<h1 id="mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</h1>
+<h4 id="mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</h4>
+<h3 id="overlay-metric"><em>Overlay Metric</em></h3>
+<p>Ketika semua atribut adalah bertipe nominal, ukuran jarak yang paling sederhana adalah dengan Ovelay Metric (OM) yang dinyatakan dengan dimana nn adalah banyaknya atribut, ai(x)ai(x) dan ai(y)ai(y) adalah nilai atribut ke ii yaitu AiAi dari masing masing objek xx dan yy, δ (ai(x),ai(y))δ (ai(x),ai(y)) adalah 0 jika ai(x)=ai(y)ai(x)=ai(y) dan 1 jika sebaliknya.</p>
+<p>OM banyak digunakan oleh instance-based learning dan locally weighted learning. Jelas sekali , ini sedikit beruk untuk mengukur jarak antara masing-masing pasangan sample, karena gagal memanfaatkan tambahan informasi yang diberikan oleh nilai atribut nominal yang bisa membantu dalam generalisasi.</p>
+<h3 id="value-difference-metric-vdm"><em>Value Difference Metric (VDM)</em></h3>
+<p>VDM dikenalkan oleh Standfill and Waltz, versi sederhana dari VDM tanpa skema pembobotan didefinsisikan dengan dimana CCadalah banyaknya kelas, P(c|ai(x))P(c|ai(x)) adalah probabilitas bersyarat dimana kelas xx adalah cc dari atribut AiAi, yang memiliki nilai ai(x)ai(x), P(c|ai(y))P(c|ai(y)) adalah probabilitas bersyarat dimana kelas yy adalah cc dengan atribut AiAi memiliki nilai ai(y)ai(y)</p>
+<p>VDM mengasumsikan bahwa dua nilai dari atribut adalah lebih dekat jika memiliki klasifikasi sama. Pendekatan lain berbasi probabilitas adalah SFM (Short and Fukunaga Metric) yang kemudian dikembangkan oleh Myles dan Hand dan didefinisikan.</p>
+<h3 id="minimum-risk-metric-mrm"><em>Minimum Risk Metric (MRM)</em></h3>
+<p>Ukuran ini dipresentasikan oleh Blanzieri and Ricci, berbeda dari SFM yaitu meminimumkan selisih antara kesalahan berhingga dan kesalahan asymtotic. MRM meminimumkan risk of misclassification yang didefinisikan.</p>
+<h2 id="mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</h2>
+<p>Nilai-nilai atribut ordinal memiliki urutan atau peringkat, namun besarnya antara nilai-nilai berturut-turut tidak diketahui. Contohnya tingkatan kecil, sedang, besar untuk atribut ukuran. Atribut ordinal juga dapat diperoleh dari diskritisasi atribut numerik dengan membuat rentang nilai ke dalam sejumlah kategori tertentu. Kategori-kategori ini disusun dalam peringkat. Yaitu, rentang atribut numerik dapat dipetakan ke atribut ordinal ff yang memiliki MfMf state. Misalnya, kisaran suhu atribut skala-skala (dalam Celcius)dapat diatur ke dalam status berikut: −30 hingga −10, −10 hingga 10, 10 hingga 30, masing-masing mewakili kategori suhu dingin, suhu sedang, dan suhu hangat. MM adalah jumlah keadaan yang dapat dilakukan oleh atribut ordinalmemiliki. State ini menentukan peringkat 1,...,Mf1,...,Mf</p>
+<p>Perlakuan untuk atribut ordinal adalah cukup sama dengan atribut numerik ketika menghitung disimilarity antara objek. Misalkan ff adalah atribut-atribut dari atribut ordinal dari nn objek. Menghitung disimilarity terhadap f fitur sebagai berikut:</p>
+<ul>
+<li>
+<p>Nilai ff untuk objek ke-ii adalah xifxif, dan ff memiliki MfMf status urutan , mewakili peringkat 1,..,Mf1,..,Mf Ganti setiap xifxif dengan peringkatnya, rif∈{1...Mf}rif∈{1...Mf}</p>
+</li>
+<li>
+<p>Karena setiap atribut ordinal dapat memiliki jumlah state yang berbeda, diperlukan untuk memetakan rentang setiap atribut ke [0,0, 1.0] sehingga setiap atribut memiliki bobot yang sama. Perl melakukan normalisasi data dengan mengganti peringkat rifrif denganzif=rif−1Mf−1zif=rif−1Mf−1</p>
+</li>
+<li>
+<p>Dissimilarity kemudian dihitung dengan menggunakan ukuran jarak seperti atribut numerik dengan data yang baru setelah ditransformasi $ z _ { i f }</p>
+</li>
+</ul>
+<p>## Menghitung Jarak Tipe Campuran</p>
+<p>Menghitung ketidaksamaan antara objek dengan atribut campuran yang berupa nominal, biner simetris, biner asimetris, numerik, atau ordinal yang ada pada kebanyakan databasae dapat dinyatakan dengan memproses semua tipe atribut secara bersamaan. Salah satu teknik tersebut menggabungkan atribut yang berbeda ke dalam matriks ketidaksamaan tunggal dan menyatakannya dengan skala interval antar [0,0,1.0][0,0,1.0]. Misalkan data berisi atribut pp tipe campuran. Ketidaksamaan (disimilarity ) antara objek ii dan jj dinyatakan dengan</p>
+<p>d(i,j)=∑pf=1δ(f)ijd(f)ij∑pf=1δ(f)ijd(i,j)=∑f=1pδij(f)dij(f)∑f=1pδij(f)</p>
+<p>dimana δfij=0δijf=0 - jika xifxif atau xjfxjf adalah hilang (i.e., tidak ada pengukuran dari atribut f untuk objek ii atau objek jj)</p>
+<ul>
+<li>jika xif=xjf=0xif=xjf=0 dan</li>
+<li>atribut ff adalah binary asymmetric,</li>
+</ul>
+<p>selain itu δfij=1δijf=1</p>
+<p>Kontribusi dari atribut ff untuk dissimilarity antara i dan j (yaitu.dfijdijf) dihitung bergantung pada tipenya,</p>
+<ul>
+<li>
+<p>Jika ff adalah numerik, dfij=∥xif−xjf∥maxhxhf−minhxhfdijf=‖xif−xjf‖maxhxhf−minhxhf, di mana h menjalankan semua nilai objek yang tidak hilang untuk atribut f</p>
+</li>
+<li>
+<p>Jika ff adalah nominal atau binary,$d_{ij}^{f}=0 $jika xif=xjfxif=xjf, sebaliknya dfij=1dijf=1</p>
+</li>
+<li>
+<p>Jika ff adalah ordinal maka hitung rangking rifrif dan zif=rif−1Mf−1zif=rif−1Mf−1 , dan perlakukan zifzif sebagai numerik.</p>
+<p><img alt="1569423863615" src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1569423863615.png" /></p>
+</li>
+</ul>
+<p><img alt="1569423909631" src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1569423909631.png" /></p>
+<p><img alt="1569423946484" src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1569423946484.png" /></p>
+<h2 id="selection-feature">SELECTION FEATURE</h2>
+<p>Pemilihan (seleksi) data dari sekumpulan data operasional perlu dilakukan sebelum tahap penggalian informasi dalam KDD dimulai. Data hasil seleksi yang digunakan untuk proses data mining, disimpan dalam suatu berkas, terpisah dari basis data operasional.</p>
+<p>Entropy Target</p>
+<ul>
+<li>Entropy (S) merupakan jumlah bit yang diperkirakan dibutuhkan untuk dapat mengekstrak suatu kelas (+ atau -) dari sejumlah data acak pada ruang sampel S.</li>
+<li>Entropy dapat dikatakan sebagai kebutuhan bit untuk menyatakan suatu kelas.</li>
+<li>Entropy digunakan untuk mengukur ketidakaslian S.</li>
+</ul>
+<p><img alt="8" src="D:\Penambangan data\8.PNG" /></p>
+<p><img alt="2" src="D:\Penambangan data\2.PNG" /></p>
+<p><img alt="3" src="D:\Penambangan data\3.PNG" /></p>
+<p><img alt="4" src="D:\Penambangan data\4.PNG" /></p>
+<p>Information GAIN</p>
+<ul>
+<li>
+<p>Gain (S,A) merupakan perolehan informasi dari atribut A relative terhadap output data S.</p>
+</li>
+<li>
+<p>Perolehan informasi didapat dari output data atau variable dependent S yang dikelompokkan berdasarkan atribut A, dinotasikan dengan gain (S,A).</p>
+</li>
+</ul>
+<p><img alt="9" src="D:\Penambangan data\9.PNG" /></p>
+<p><img alt="5" src="D:\Penambangan data\5.PNG" /></p>
+<p><img alt="6" src="D:\Penambangan data\6.PNG" /></p>
+<p><img alt="7" src="D:\Penambangan data\7.PNG" /></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -240,5 +272,5 @@ display(HTML(tabulate.tabulate(table, tablefmt='html')))
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-09-12 04:33:08
+Build Date UTC : 2019-09-25 15:10:54
 -->
