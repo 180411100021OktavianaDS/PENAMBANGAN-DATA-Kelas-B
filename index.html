@@ -70,6 +70,7 @@
             <li><a href="#mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</a></li>
             <li><a href="#selection-feature">SELECTION FEATURE</a></li>
             <li><a href="#naive-bayes">Naive Bayes</a></li>
+            <li><a href="#knn">KNN</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -80,7 +81,7 @@
 <h1 id="penambangan-data-3b">PENAMBANGAN DATA 3B</h1>
 <h1 id="statistik-deskriptif">Statistik Deskriptif</h1>
 <p>Statistik deskriptif adalah salah satu bagian dari ilmu statistika yang berhubungan dengan aktivitas penghimpunan, penataan, peringkasan dan penyajian data dengan harapan agar data lebih bermakna, mudah dibaca dan mudah dipahami oleh pengguna data. Statistik deskriptif hanya sebatas memberikan deskripsi atau gambaran umum tentang karakteristik objek yang diteliti tanpa maksud untuk melakukan generalisasi sampel terhadap populasi.</p>
-<p>Kegiatan dalam statistik deskriptif meliputi pengumpulan, pengelompokan dan pengolahan data yang selanjutnya akan menghasilkan ukuran-ukuran statistik seperti frekuensi, pemusatan data, penyebaran data, kecenderungan suatu gugus data dan lain-lain. Selain itu, agar data lebih mudah dibaca dan dipahami maka data dapat diringkas dalam bentuk tabulasi atau disajikan dalam bentuk grafik atau diagram, beberapa yang akan kita bahas yaitu :</p>
+<p>​   Kegiatan dalam statistik deskriptif meliputi pengumpulan, pengelompokan dan pengolahan data yang selanjutnya akan menghasilkan ukuran-ukuran statistik seperti frekuensi, pemusatan data, penyebaran data, kecenderungan suatu gugus data dan lain-lain. Selain itu, agar data lebih mudah dibaca dan dipahami maka data dapat diringkas dalam bentuk tabulasi atau disajikan dalam bentuk grafik atau diagram, beberapa yang akan kita bahas yaitu :</p>
 <ul>
 <li>
 <p>Rata-rata</p>
@@ -107,10 +108,10 @@
 <p>Skewness</p>
 </li>
 </ul>
-<p>1. Rata - rata</p>
-<p>Rata-rata adalah nilai yang mewakili sekelompok data. Rata-rata diperoleh dari penjumlahan seluruh nilai data dibagi dengan banyaknya data.</p>
-<p>2. Median</p>
-<p>Untuk data miring (asimetris), ukuran pusat data yang lebih baik adalah median, yang merupakan nilai tengah dalam satu set nilai data yang diurutkan. Ini adalah nilai yang memisahkan separuh data yang lebih tinggi dari data tersebut dan sebagian data yang lebih rendah dari data tersebut. Dalam probabilitas dan statistik, median umumnya berlaku untuk data numerik; namun, kami dapat memperluas konsep menjadi data ordinal. Misalkan kumpulan N data yang diberikan untuk atribut X diurutkan dalam urutan naik. Jika N ganjil, maka median adalah nilai tengah dari data yang ordinal. Jika N adalah genap, maka mediannya tidak unik; dihitung dengan rata rata dari nilai </p>
+<p>## 1. Rata - rata</p>
+<p>​ Rata-rata adalah nilai yang mewakili sekelompok data. Rata-rata diperoleh dari penjumlahan seluruh nilai data dibagi dengan banyaknya data.</p>
+<p>## 2. Median</p>
+<p>​ Untuk data miring (asimetris), ukuran pusat data yang lebih baik adalah median, yang merupakan nilai tengah dalam satu set nilai data yang diurutkan. Ini adalah nilai yang memisahkan separuh data yang lebih tinggi dari data tersebut dan sebagian data yang lebih rendah dari data tersebut. Dalam probabilitas dan statistik, median umumnya berlaku untuk data numerik; namun, kami dapat memperluas konsep menjadi data ordinal. Misalkan kumpulan N data yang diberikan untuk atribut X diurutkan dalam urutan naik. Jika N ganjil, maka median adalah nilai tengah dari data yang ordinal. Jika N adalah genap, maka mediannya tidak unik; dihitung dengan rata rata dari nilai </p>
 <h2 id="3-modus">3.  Modus</h2>
 <p>Modus adalah nilai yang sering muncul dalam sekelompok data.</p>
 <h2 id="4-variansi-dan-standart-variansi">4. Variansi dan standart Variansi</h2>
@@ -120,11 +121,11 @@
 <h2 id="6-quartil">6. Quartil</h2>
 <p>Kuartil memberikan gambaran pusat distribus, penyebaran, dan bentuk distribusi. Kuartil satu, dilambangkan oleh Q1, adalah persentil ke-25. Nilai ini menunjukan 25% terendah dari data. Kuartil ketiga, dilambangkan oleh Q3, adalah persentil ke-75 - itu memisahkan data 75% dari terendah data (atau 25% dari tertinggi data. </p>
 <h2 id="7-skewness">7. Skewness</h2>
-<p>Derajat distorsi dari kurva lonceng simetris atau distribusi normal. Ini mengukur kurangnya simetri dalam distribusi data Untuk menghitung derajat distorisi dapat menggunakan Koefisien Kemencengan Pearson yang diperoleh dengan menggunakan nilai selisih rata-rata dengan modus dibagi simpangan baku.</p>
-<p><img alt="" src="![10](https://user-images.githubusercontent.com/48461494/66537185-ca426680-eb49-11e9-88f0-369180515a6d.PNG)" /></p>
-<p><img alt="11" src="![11](https://user-images.githubusercontent.com/48461494/66537185-ca426680-eb49-11e9-88f0-369180515a6d.PNG)" /></p>
-<p><img alt="12" src="![12](https://user-images.githubusercontent.com/48461494/66537185-ca426680-eb49-11e9-88f0-369180515a6d.PNG)" /></p>
-<p><img alt="13" src="![13](https://user-images.githubusercontent.com/48461494/66537185-ca426680-eb49-11e9-88f0-369180515a6d.PNG)" /></p>
+<p>​   Derajat distorsi dari kurva lonceng simetris atau distribusi normal. Ini mengukur kurangnya simetri dalam distribusi data Untuk menghitung derajat distorisi dapat menggunakan Koefisien Kemencengan Pearson yang diperoleh dengan menggunakan nilai selisih rata-rata dengan modus dibagi simpangan baku.</p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\10.PNG" /></p>
+<p><img alt="11" src="C:\Users\ASUS\newdatamining\foto\11.PNG" /></p>
+<p><img alt="12" src="C:\Users\ASUS\newdatamining\foto\12.PNG" /></p>
+<p><img alt="13" src="C:\Users\ASUS\newdatamining\foto\13.PNG" /></p>
 <h1 id="mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</h1>
 <h4 id="mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</h4>
 <h3 id="overlay-metric"><em>Overlay Metric</em></h3>
@@ -168,9 +169,9 @@
 </li>
 <li>
 <p>Jika ff adalah ordinal maka hitung rangking rifrif dan zif=rif−1Mf−1zif=rif−1Mf−1 , dan perlakukan zifzif sebagai numerik.</p>
-<p><img alt="" src="\img\img\14.PNG" /></p>
-<p><img alt="15" src="\img\img\15.PNG" /></p>
-<p><img alt="16" src="\img\img\16.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\14.PNG" /></p>
+<p><img alt="15" src="C:\Users\ASUS\newdatamining\foto\15.PNG" /></p>
+<p><img alt="16" src="C:\Users\ASUS\newdatamining\foto\16.PNG" /></p>
 </li>
 </ul>
 <h2 id="selection-feature">SELECTION FEATURE</h2>
@@ -187,10 +188,10 @@
 <p>Entropy digunakan untuk mengukur ketidakaslian S.</p>
 </li>
 </ul>
-<p><img alt="" src="\img\img\8.PNG" /></p>
-<p><img alt="" src="\img\img\2.PNG" /></p>
-<p><img alt="3" src="\img\img\3.PNG" /></p>
-<p><img alt="4" src="\img\img\4.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\8.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\2.PNG" /></p>
+<p><img alt="3" src="C:\Users\ASUS\newdatamining\foto\3.PNG" /></p>
+<p><img alt="4" src="C:\Users\ASUS\newdatamining\foto\4.PNG" /></p>
 <p>Information GAIN</p>
 <ul>
 <li>
@@ -200,10 +201,10 @@
 <p>Perolehan informasi didapat dari output data atau variable dependent S yang dikelompokkan berdasarkan atribut A, dinotasikan dengan gain (S,A).</p>
 </li>
 </ul>
-<p><img alt="" src="\img\img\9.PNG" /></p>
-<p><img alt="" src="\img\img\5.PNG" /></p>
-<p><img alt="6" src="\img\img\6.PNG" /></p>
-<p><img alt="7" src="\img\img\7.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\9.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\5.PNG" /></p>
+<p><img alt="6" src="C:\Users\ASUS\newdatamining\foto\6.PNG" /></p>
+<p><img alt="7" src="C:\Users\ASUS\newdatamining\foto\7.PNG" /></p>
 <h2 id="naive-bayes">Naive Bayes</h2>
 <p><strong>Algoritma Naive Bayes</strong> merupakan sebuah metoda klasifikasi menggunakan metode probabilitas dan statistik yg dikemukakan oleh ilmuwan Inggris Thomas Bayes. <strong>Algoritma Naive Bayes</strong> memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya sehingga dikenal sebagai Teorema Bayes. Ciri utama dr Naïve Bayes Classifier ini adalah asumsi yg sangat kuat (naïf) akan independensi dari masing-masing kondisi / kejadian.</p>
 <p>Naive Bayes Classifier bekerja sangat baik dibanding dengan model classifier lainnya. Hal ini dibuktikan pada jurnal <em>Xhemali, Daniela, Chris J. Hinde, and Roger G. Stone. “Naive Bayes vs. decision trees vs. neural networks in the classification of training web pages.” (2009),</em> mengatakan bahwa “Naïve Bayes Classifier memiliki tingkat akurasi yg lebih baik dibanding model classifier lainnya”.</p>
@@ -225,7 +226,7 @@
 <ul>
 <li>Asumsi independence antar atribut membuat akurasi berkurang (karena biasanya ada keterkaitan)</li>
 </ul>
-<p><img alt="" src="\img\img\51.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto1\51.PNG" /></p>
 <p><strong>Keterangan :</strong>
   <strong><em>x</em></strong> : Data dengan class yang belum diketahui
   <strong><em>c</em></strong> : Hipotesis data merupakan suatu class spesifik
@@ -236,9 +237,9 @@
 <p>Rumus diatas menjelaskan bahwa peluang masuknya sampel karakteristik tertentu dalam kelas C (Posterior) adalah peluang munculnya kelas C (sebelum masuknya sampel tersebut, seringkali disebut prior), dikali dengan peluang kemunculan karakteristik karakteristik sampel pada kelas C (disebut juga likelihood), dibagi dengan peluang kemunculan karakteristik  sampel secara global ( disebut juga evidence). </p>
 <p>Nilai Evidence selalu tetap untuk setiap kelas pada satu sampel. Nilai dari posterior tersebut nantinya akan dibandingkan dengan nilai nilai posterior kelas lainnya untuk menentukan ke kelas apa suatu sampel akan diklasifikasikan. Penjabaran lebih lanjut rumus Bayes tersebut dilakukan dengan menjabarkan <em>(c|x1,…,xn)</em> menggunakan aturan perkalian </p>
 <p>Dapat dilihat bahwa hasil penjabaran tersebut menyebabkan semakin banyak dan semakin kompleksnya faktor faktor syarat yang mempengaruhi nilai probabilitas, yang hampir mustahil untuk dianalisa satu persatu. Akibatnya, perhitungan tersebut menjadi sulit untuk dilakukan. Disinilah digunakan asumsi independensi yang sangat tinggi (naif), bahwa masing masing petunjuk saling bebas (independen) satu sama lain. Dengan asumsi tersebut, maka berlaku suatu kesamaan sebagai berikut:</p>
-<p><img alt="" src="\img\img\52.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto1\52.PNG" /></p>
 <p>Persamaan diatas merupakan model dari <strong>Teorema Naive Bayes</strong> yang selanjutnya akan digunakan dalam proses klasifikasi. Untuk klasifikasi dengan data kontinyu digunakan rumus Densitas Gauss :</p>
-<p><img alt="" src="\img\img\53.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto1\53.PNG" /></p>
 <h6 id="pengambilan-data-set">pengambilan data set</h6>
 <pre><code class="python">from sklearn import datasets`
 `from pandas import *`
@@ -2067,7 +2068,2373 @@ print('Prediksi Training Bayes: %d of %d == %f %%' % (corrects, len(data), corre
 </code></pre>
 
 <pre><code class="python">Prediksi Training Bayes: 140 of 150 == 93.333333 %
-</code></pre></div>
+</code></pre>
+
+<h2 id="knn">KNN</h2>
+<h4 id="pengertian-knn">Pengertian KNN</h4>
+<p>K-nearest neighbors atau knn adalah algoritma yang berfungsi untuk melakukan klasifikasi suatu data berdasarkan data pembelajaran (<em>train data sets</em>), yang diambil dari k tetangga terdekatnya (<em>nearest neighbors</em>). Dengan k merupakan banyaknya tetangga terdekat.</p>
+<h5 id="a-cara-kerja-algoritma-k-nearest-neighbors-knn">A. Cara Kerja Algoritma K-Nearest Neighbors (KNN)</h5>
+<p>K-nearest neighbors melakukan klasifikasi dengan proyeksi data pembelajaran pada ruang berdimensi banyak. Ruang ini dibagi menjadi bagian-bagian yang merepresentasikan kriteria data pembelajaran. Setiap data pembelajaran direpresentasikan menjadi titik-titik <strong><em>c</em></strong> pada ruang dimensi banyak.</p>
+<table>
+<thead>
+<tr>
+<th align="center">sepal   length</th>
+<th align="center">sepal width</th>
+<th align="center">petal length</th>
+<th align="center">petal width</th>
+<th align="center">variety</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">sample data</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">2,4</td>
+<td align="center">3,3</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">Training   Data</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">a</td>
+<td align="center">b</td>
+<td align="center">c</td>
+<td align="center">d</td>
+<td align="center">class</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3,1</td>
+<td align="center">1,5</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3,1</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3</td>
+<td align="center">1,4</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3,1</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3</td>
+<td align="center">1,4</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,3</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,7</td>
+<td align="center">3,2</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,7</td>
+<td align="center">3,2</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,1</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,4</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,2</td>
+<td align="center">1,2</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3,4</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,2</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,4</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,4</td>
+<td align="center">1,6</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">3,4</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,4</td>
+<td align="center">1,4</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,3</td>
+<td align="center">1,7</td>
+<td align="center">0,5</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,5</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,5</td>
+<td align="center">1,4</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,5</td>
+<td align="center">1,3</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">3,5</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3,4</td>
+<td align="center">1,9</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,6</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3,6</td>
+<td align="center">1,4</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,4</td>
+<td align="center">3</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,4</td>
+<td align="center">3,2</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,4</td>
+<td align="center">2,9</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,5</td>
+<td align="center">1,6</td>
+<td align="center">0,6</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,4</td>
+<td align="center">1,7</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,4</td>
+<td align="center">1,5</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,7</td>
+<td align="center">1,5</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,3</td>
+<td align="center">3,7</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,8</td>
+<td align="center">1,5</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,8</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,3</td>
+<td align="center">3</td>
+<td align="center">1,1</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">3,5</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,6</td>
+<td align="center">1</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,7</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,8</td>
+<td align="center">1,9</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,5</td>
+<td align="center">2,3</td>
+<td align="center">1,3</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,9</td>
+<td align="center">1,7</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,9</td>
+<td align="center">1,3</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">4,1</td>
+<td align="center">1,5</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">3,8</td>
+<td align="center">1,7</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">4,2</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">4</td>
+<td align="center">1,2</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">4,4</td>
+<td align="center">1,5</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">2,5</td>
+<td align="center">3</td>
+<td align="center">1,1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">2,3</td>
+<td align="center">3,3</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,6</td>
+<td align="center">3,5</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">3,5</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,9</td>
+<td align="center">3,6</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,4</td>
+<td align="center">3,7</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,4</td>
+<td align="center">3,8</td>
+<td align="center">1,1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,5</td>
+<td align="center">3,9</td>
+<td align="center">1,1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">2,7</td>
+<td align="center">3,9</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">3,9</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,5</td>
+<td align="center">4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,6</td>
+<td align="center">4</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">4,1</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,3</td>
+<td align="center">4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">3</td>
+<td align="center">4,1</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,8</td>
+<td align="center">4,1</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,2</td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">3</td>
+<td align="center">4,2</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,8</td>
+<td align="center">4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,7</td>
+<td align="center">4,2</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,9</td>
+<td align="center">4,2</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,9</td>
+<td align="center">3</td>
+<td align="center">4,2</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,6</td>
+<td align="center">4,4</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">2,9</td>
+<td align="center">4,3</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,8</td>
+<td align="center">4,5</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">3</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,9</td>
+<td align="center">4,3</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">2,5</td>
+<td align="center">4,5</td>
+<td align="center">1,7</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,9</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,3</td>
+<td align="center">4,4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">3,4</td>
+<td align="center">4,5</td>
+<td align="center">1,6</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">3</td>
+<td align="center">4,6</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,6</td>
+<td align="center">3</td>
+<td align="center">4,4</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,8</td>
+<td align="center">4,7</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">3,2</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,1</td>
+<td align="center">4,4</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,9</td>
+<td align="center">4,7</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">2,2</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,6</td>
+<td align="center">2,9</td>
+<td align="center">4,6</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">2,8</td>
+<td align="center">4,6</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">3,3</td>
+<td align="center">4,7</td>
+<td align="center">1,6</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,9</td>
+<td align="center">3,2</td>
+<td align="center">4,8</td>
+<td align="center">1,8</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">3</td>
+<td align="center">4,8</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,1</td>
+<td align="center">4,7</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">2,8</td>
+<td align="center">4,8</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,8</td>
+<td align="center">4,9</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,5</td>
+<td align="center">4,9</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">3</td>
+<td align="center">4,9</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,2</td>
+<td align="center">5</td>
+<td align="center">1,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,8</td>
+<td align="center">2,8</td>
+<td align="center">4,8</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">3,2</td>
+<td align="center">4,7</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,7</td>
+<td align="center">4,9</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,7</td>
+<td align="center">5,1</td>
+<td align="center">1,6</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,5</td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,9</td>
+<td align="center">3</td>
+<td align="center">5,1</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,8</td>
+<td align="center">5,1</td>
+<td align="center">1,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">5,1</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">5,1</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,1</td>
+<td align="center">4,9</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,5</td>
+<td align="center">5</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3</td>
+<td align="center">5</td>
+<td align="center">1,7</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,8</td>
+<td align="center">5,1</td>
+<td align="center">2,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3,2</td>
+<td align="center">5,1</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3</td>
+<td align="center">5,2</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,7</td>
+<td align="center">5,3</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,6</td>
+<td align="center">5,6</td>
+<td align="center">1,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">3,1</td>
+<td align="center">5,5</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">3,2</td>
+<td align="center">5,3</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3</td>
+<td align="center">5,5</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3</td>
+<td align="center">5,2</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,9</td>
+<td align="center">5,6</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,1</td>
+<td align="center">5,1</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">3,4</td>
+<td align="center">5,4</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,8</td>
+<td align="center">5,6</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,1</td>
+<td align="center">5,4</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,8</td>
+<td align="center">5,6</td>
+<td align="center">2,2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,8</td>
+<td align="center">3</td>
+<td align="center">5,5</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">3,4</td>
+<td align="center">5,6</td>
+<td align="center">2,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,3</td>
+<td align="center">5,7</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">2,5</td>
+<td align="center">5,8</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,1</td>
+<td align="center">5,6</td>
+<td align="center">2,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3</td>
+<td align="center">5,8</td>
+<td align="center">2,2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,2</td>
+<td align="center">3</td>
+<td align="center">5,8</td>
+<td align="center">1,6</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,2</td>
+<td align="center">5,7</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,3</td>
+<td align="center">5,7</td>
+<td align="center">2,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,8</td>
+<td align="center">3,2</td>
+<td align="center">5,9</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">3,3</td>
+<td align="center">6</td>
+<td align="center">2,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,1</td>
+<td align="center">3</td>
+<td align="center">5,9</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,2</td>
+<td align="center">3,2</td>
+<td align="center">6</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,4</td>
+<td align="center">2,8</td>
+<td align="center">6,1</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,3</td>
+<td align="center">2,9</td>
+<td align="center">6,3</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,2</td>
+<td align="center">3,6</td>
+<td align="center">6,1</td>
+<td align="center">2,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">3</td>
+<td align="center">6,1</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,9</td>
+<td align="center">3,8</td>
+<td align="center">6,4</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,6</td>
+<td align="center">3</td>
+<td align="center">6,6</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">2,8</td>
+<td align="center">6,7</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">3,8</td>
+<td align="center">6,7</td>
+<td align="center">2,2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">2,6</td>
+<td align="center">6,9</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">1.   Menghitung Jarak</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">(a-sd1)^2</td>
+<td align="center">(b-sd2)^2</td>
+<td align="center">(c-sd3)^2</td>
+<td align="center">(d-sd4)^2</td>
+<td align="center">SQRT</td>
+<td align="center">sqrt sorting</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,130728</td>
+<td align="center">0,141421356</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,147091</td>
+<td align="center">0,387298335</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,49</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,007486</td>
+<td align="center">0,458257569</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">1,974842</td>
+<td align="center">0,721110255</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">0,81</td>
+<td align="center">2,188607</td>
+<td align="center">0,787400787</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,090454</td>
+<td align="center">0,836660027</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">0,49</td>
+<td align="center">2,114237</td>
+<td align="center">0,848528137</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,81</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,251666</td>
+<td align="center">0,932737905</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,64</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,051828</td>
+<td align="center">0,959166305</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,306513</td>
+<td align="center">0,974679434</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,111871</td>
+<td align="center">0,974679434</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,211334</td>
+<td align="center">1,140175425</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,64</td>
+<td align="center">4,41</td>
+<td align="center">0,64</td>
+<td align="center">2,387467</td>
+<td align="center">1,174734012</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,130728</td>
+<td align="center">1,216552506</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">0,64</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,231591</td>
+<td align="center">1,236931688</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,218107</td>
+<td align="center">1,240967365</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">2,89</td>
+<td align="center">0,36</td>
+<td align="center">2,063977</td>
+<td align="center">1,256980509</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,310844</td>
+<td align="center">1,284523258</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1</td>
+<td align="center">3,61</td>
+<td align="center">0,49</td>
+<td align="center">2,278157</td>
+<td align="center">1,319090596</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,81</td>
+<td align="center">2,56</td>
+<td align="center">0,25</td>
+<td align="center">1,913113</td>
+<td align="center">1,337908816</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,21</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,345208</td>
+<td align="center">1,360147051</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,21</td>
+<td align="center">3,61</td>
+<td align="center">0,49</td>
+<td align="center">2,313007</td>
+<td align="center">1,392838828</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1,21</td>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">2,389561</td>
+<td align="center">1,476482306</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1,21</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,275961</td>
+<td align="center">1,516575089</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">1,96</td>
+<td align="center">0,64</td>
+<td align="center">1,9</td>
+<td align="center">1,526433752</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1,44</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,387467</td>
+<td align="center">1,555634919</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1,44</td>
+<td align="center">3,61</td>
+<td align="center">0,81</td>
+<td align="center">2,420744</td>
+<td align="center">1,593737745</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,36</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,291288</td>
+<td align="center">1,740689519</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,351595</td>
+<td align="center">1,774823935</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,25</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,179449</td>
+<td align="center">1,808314132</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1,21</td>
+<td align="center">2,89</td>
+<td align="center">0,16</td>
+<td align="center">2,066398</td>
+<td align="center">1,849324201</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">2,109502</td>
+<td align="center">1,894729532</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,202272</td>
+<td align="center">1,897366596</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,69</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,308679</td>
+<td align="center">1,9</td>
+</tr>
+<tr>
+<td align="center">0,16</td>
+<td align="center">1,69</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,393742</td>
+<td align="center">1,910497317</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,96</td>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">2,393742</td>
+<td align="center">1,913112647</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,96</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,351595</td>
+<td align="center">1,95192213</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,36</td>
+<td align="center">4,84</td>
+<td align="center">0,81</td>
+<td align="center">2,523886</td>
+<td align="center">1,974841766</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">1,21</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,491987</td>
+<td align="center">2,002498439</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1,44</td>
+<td align="center">5,29</td>
+<td align="center">0,64</td>
+<td align="center">2,7313</td>
+<td align="center">2,00748599</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">1,69</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,412468</td>
+<td align="center">2,051828453</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,96</td>
+<td align="center">1,96</td>
+<td align="center">0,36</td>
+<td align="center">2,078461</td>
+<td align="center">2,051828453</td>
+</tr>
+<tr>
+<td align="center">0,16</td>
+<td align="center">0,01</td>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">2,158703</td>
+<td align="center">2,063976744</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">2,25</td>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">2,328089</td>
+<td align="center">2,066397832</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">2,25</td>
+<td align="center">4</td>
+<td align="center">0,36</td>
+<td align="center">2,61916</td>
+<td align="center">2,078460969</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">2,89</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,651415</td>
+<td align="center">2,090454496</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">1,96</td>
+<td align="center">2,56</td>
+<td align="center">0,49</td>
+<td align="center">2,376973</td>
+<td align="center">2,095232684</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">3,24</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,801785</td>
+<td align="center">2,109502311</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">2,56</td>
+<td align="center">4,41</td>
+<td align="center">0,64</td>
+<td align="center">2,901724</td>
+<td align="center">2,111871208</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,87054</td>
+<td align="center">2,111871208</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,01</td>
+<td align="center">0,09</td>
+<td align="center">0,01</td>
+<td align="center">0,387298</td>
+<td align="center">2,114237451</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,01</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0,141421</td>
+<td align="center">2,128379665</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,04</td>
+<td align="center">0,04</td>
+<td align="center">0</td>
+<td align="center">0,848528</td>
+<td align="center">2,130727575</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,16</td>
+<td align="center">0,04</td>
+<td align="center">0</td>
+<td align="center">0,458258</td>
+<td align="center">2,130727575</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,25</td>
+<td align="center">0,09</td>
+<td align="center">0,09</td>
+<td align="center">0,959166</td>
+<td align="center">2,130727575</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0</td>
+<td align="center">0,16</td>
+<td align="center">0</td>
+<td align="center">0,72111</td>
+<td align="center">2,140093456</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0</td>
+<td align="center">0,25</td>
+<td align="center">0,01</td>
+<td align="center">0,787401</td>
+<td align="center">2,147091055</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">0,01</td>
+<td align="center">0,932738</td>
+<td align="center">2,149418526</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">0,09</td>
+<td align="center">0,36</td>
+<td align="center">0,16</td>
+<td align="center">0,83666</td>
+<td align="center">2,158703314</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">0,36</td>
+<td align="center">0,04</td>
+<td align="center">1,140175</td>
+<td align="center">2,158703314</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,01</td>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">0,974679</td>
+<td align="center">2,177154106</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,04</td>
+<td align="center">0,49</td>
+<td align="center">0,04</td>
+<td align="center">1,174734</td>
+<td align="center">2,179449472</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">0,64</td>
+<td align="center">0</td>
+<td align="center">1,240967</td>
+<td align="center">2,186321111</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,01</td>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">0,974679</td>
+<td align="center">2,188606863</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,36</td>
+<td align="center">0,64</td>
+<td align="center">0,09</td>
+<td align="center">1,256981</td>
+<td align="center">2,202271555</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,16</td>
+<td align="center">0,64</td>
+<td align="center">0,09</td>
+<td align="center">1,236932</td>
+<td align="center">2,211334439</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,04</td>
+<td align="center">0,49</td>
+<td align="center">0</td>
+<td align="center">1,319091</td>
+<td align="center">2,213594362</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,36</td>
+<td align="center">0,81</td>
+<td align="center">0,04</td>
+<td align="center">1,360147</td>
+<td align="center">2,218107301</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,16</td>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">1,476482</td>
+<td align="center">2,218107301</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">1,216553</td>
+<td align="center">2,224859546</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,25</td>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">1,337909</td>
+<td align="center">2,224859546</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0,36</td>
+<td align="center">0,81</td>
+<td align="center">0,25</td>
+<td align="center">1,555635</td>
+<td align="center">2,23159136</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,04</td>
+<td align="center">1,21</td>
+<td align="center">0,04</td>
+<td align="center">1,284523</td>
+<td align="center">2,236067977</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">0,09</td>
+<td align="center">1,74069</td>
+<td align="center">2,25166605</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,16</td>
+<td align="center">1,44</td>
+<td align="center">0,09</td>
+<td align="center">1,526434</td>
+<td align="center">2,256102835</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,36</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,516575</td>
+<td align="center">2,258317958</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,36</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,593738</td>
+<td align="center">2,275961335</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">0,09</td>
+<td align="center">1,89473</td>
+<td align="center">2,27815715</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,01</td>
+<td align="center">1,44</td>
+<td align="center">0,49</td>
+<td align="center">1,392839</td>
+<td align="center">2,289104628</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,25</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,774824</td>
+<td align="center">2,291287847</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,01</td>
+<td align="center">1,21</td>
+<td align="center">0,09</td>
+<td align="center">1,808314</td>
+<td align="center">2,291287847</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">1</td>
+<td align="center">1,44</td>
+<td align="center">0,36</td>
+<td align="center">2,002498</td>
+<td align="center">2,306512519</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,36</td>
+<td align="center">1,69</td>
+<td align="center">0,16</td>
+<td align="center">1,910497</td>
+<td align="center">2,308679276</td>
+</tr>
+<tr>
+<td align="center">2,89</td>
+<td align="center">0,36</td>
+<td align="center">1,21</td>
+<td align="center">0,16</td>
+<td align="center">2,149419</td>
+<td align="center">2,310844002</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,16</td>
+<td align="center">1,96</td>
+<td align="center">0,04</td>
+<td align="center">1,897367</td>
+<td align="center">2,313006701</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">2,140093</td>
+<td align="center">2,328089345</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">1,21</td>
+<td align="center">0,16</td>
+<td align="center">2,258318</td>
+<td align="center">2,34520788</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,96</td>
+<td align="center">0,16</td>
+<td align="center">1,951922</td>
+<td align="center">2,351595203</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">0,04</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,849324</td>
+<td align="center">2,351595203</td>
+</tr>
+<tr>
+<td align="center">2,89</td>
+<td align="center">0,25</td>
+<td align="center">1,69</td>
+<td align="center">0,09</td>
+<td align="center">2,218107</td>
+<td align="center">2,368543856</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,16</td>
+<td align="center">1,69</td>
+<td align="center">0,25</td>
+<td align="center">2,158703</td>
+<td align="center">2,376972865</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,81</td>
+<td align="center">1,96</td>
+<td align="center">0,36</td>
+<td align="center">2,256103</td>
+<td align="center">2,38117618</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0,64</td>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">2,12838</td>
+<td align="center">2,387467277</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,36</td>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">2,111871</td>
+<td align="center">2,387467277</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">1,96</td>
+<td align="center">0,25</td>
+<td align="center">2,437212</td>
+<td align="center">2,389560629</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">0,16</td>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">2,177154</td>
+<td align="center">2,393741841</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,16</td>
+<td align="center">2,56</td>
+<td align="center">1</td>
+<td align="center">2,051828</td>
+<td align="center">2,393741841</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,01</td>
+<td align="center">2,56</td>
+<td align="center">0,25</td>
+<td align="center">2,186321</td>
+<td align="center">2,412467616</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,36</td>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">2,236068</td>
+<td align="center">2,420743687</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,04</td>
+<td align="center">2,89</td>
+<td align="center">0,25</td>
+<td align="center">2,095233</td>
+<td align="center">2,437211521</td>
+</tr>
+<tr>
+<td align="center">3,61</td>
+<td align="center">0,16</td>
+<td align="center">2,25</td>
+<td align="center">0,16</td>
+<td align="center">2,485961</td>
+<td align="center">2,48394847</td>
+</tr>
+<tr>
+<td align="center">4,41</td>
+<td align="center">0,64</td>
+<td align="center">1,96</td>
+<td align="center">0,16</td>
+<td align="center">2,677686</td>
+<td align="center">2,485960579</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,09</td>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">2,291288</td>
+<td align="center">2,491987159</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,09</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,213594</td>
+<td align="center">2,523885893</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,01</td>
+<td align="center">2,89</td>
+<td align="center">1</td>
+<td align="center">2,130728</td>
+<td align="center">2,619160171</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0,36</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,289105</td>
+<td align="center">2,632489316</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,16</td>
+<td align="center">3,24</td>
+<td align="center">0,25</td>
+<td align="center">2,368544</td>
+<td align="center">2,641968963</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,22486</td>
+<td align="center">2,651414717</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,22486</td>
+<td align="center">2,673948391</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">2,56</td>
+<td align="center">0,25</td>
+<td align="center">2,701851</td>
+<td align="center">2,677685568</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,01</td>
+<td align="center">2,89</td>
+<td align="center">0,81</td>
+<td align="center">2,381176</td>
+<td align="center">2,701851217</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,89</td>
+<td align="center">0,49</td>
+<td align="center">2,641969</td>
+<td align="center">2,727636339</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,16</td>
+<td align="center">3,24</td>
+<td align="center">1,96</td>
+<td align="center">2,483948</td>
+<td align="center">2,731300057</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">3,24</td>
+<td align="center">1</td>
+<td align="center">2,727636</td>
+<td align="center">2,744084547</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">1</td>
+<td align="center">2,744085</td>
+<td align="center">2,801785145</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,09</td>
+<td align="center">4</td>
+<td align="center">0,81</td>
+<td align="center">2,673948</td>
+<td align="center">2,853068524</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,04</td>
+<td align="center">5,29</td>
+<td align="center">0,16</td>
+<td align="center">2,632489</td>
+<td align="center">2,867054237</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,49</td>
+<td align="center">4,84</td>
+<td align="center">0,64</td>
+<td align="center">2,867054</td>
+<td align="center">2,870540019</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">1,69</td>
+<td align="center">2,929164</td>
+<td align="center">2,898275349</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">4,84</td>
+<td align="center">0,64</td>
+<td align="center">2,898275</td>
+<td align="center">2,901723626</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">1,69</td>
+<td align="center">2,983287</td>
+<td align="center">2,929163703</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,25</td>
+<td align="center">5,29</td>
+<td align="center">0,64</td>
+<td align="center">2,853069</td>
+<td align="center">2,964793416</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">1,69</td>
+<td align="center">3,069202</td>
+<td align="center">2,983286778</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">1</td>
+<td align="center">4,41</td>
+<td align="center">1,69</td>
+<td align="center">2,964793</td>
+<td align="center">2,984962311</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,16</td>
+<td align="center">5,29</td>
+<td align="center">1,21</td>
+<td align="center">2,984962</td>
+<td align="center">3,023243292</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">4,41</td>
+<td align="center">1,21</td>
+<td align="center">3,179623</td>
+<td align="center">3,069201851</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,16</td>
+<td align="center">5,29</td>
+<td align="center">1,44</td>
+<td align="center">3,023243</td>
+<td align="center">3,165438358</td>
+</tr>
+<tr>
+<td align="center">3,61</td>
+<td align="center">0,36</td>
+<td align="center">4,84</td>
+<td align="center">1,21</td>
+<td align="center">3,165438</td>
+<td align="center">3,179622619</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">1</td>
+<td align="center">5,29</td>
+<td align="center">1,96</td>
+<td align="center">3,195309</td>
+<td align="center">3,184336666</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">5,76</td>
+<td align="center">1,21</td>
+<td align="center">3,319639</td>
+<td align="center">3,195309062</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,01</td>
+<td align="center">6,25</td>
+<td align="center">0,64</td>
+<td align="center">3,184337</td>
+<td align="center">3,257299495</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">5,29</td>
+<td align="center">1,96</td>
+<td align="center">3,313608</td>
+<td align="center">3,313608305</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">6,25</td>
+<td align="center">1,44</td>
+<td align="center">3,257299</td>
+<td align="center">3,319638535</td>
+</tr>
+<tr>
+<td align="center">5,29</td>
+<td align="center">0,36</td>
+<td align="center">6,25</td>
+<td align="center">0,36</td>
+<td align="center">3,501428</td>
+<td align="center">3,472751071</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">5,76</td>
+<td align="center">1,69</td>
+<td align="center">3,477068</td>
+<td align="center">3,47706773</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">5,76</td>
+<td align="center">2,25</td>
+<td align="center">3,472751</td>
+<td align="center">3,50142828</td>
+</tr>
+<tr>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">6,76</td>
+<td align="center">1,69</td>
+<td align="center">3,563706</td>
+<td align="center">3,508560959</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,81</td>
+<td align="center">7,29</td>
+<td align="center">2,25</td>
+<td align="center">3,508561</td>
+<td align="center">3,563705936</td>
+</tr>
+<tr>
+<td align="center">4,84</td>
+<td align="center">0,36</td>
+<td align="center">6,76</td>
+<td align="center">1,21</td>
+<td align="center">3,629049</td>
+<td align="center">3,629049462</td>
+</tr>
+<tr>
+<td align="center">5,29</td>
+<td align="center">0,64</td>
+<td align="center">7,29</td>
+<td align="center">0,64</td>
+<td align="center">3,722902</td>
+<td align="center">3,722902094</td>
+</tr>
+<tr>
+<td align="center">6,25</td>
+<td align="center">0,16</td>
+<td align="center">7,84</td>
+<td align="center">0,81</td>
+<td align="center">3,880722</td>
+<td align="center">3,880721582</td>
+</tr>
+<tr>
+<td align="center">5,76</td>
+<td align="center">0,25</td>
+<td align="center">9</td>
+<td align="center">0,64</td>
+<td align="center">3,956008</td>
+<td align="center">3,956008089</td>
+</tr>
+<tr>
+<td align="center">5,29</td>
+<td align="center">1,44</td>
+<td align="center">7,84</td>
+<td align="center">2,25</td>
+<td align="center">4,101219</td>
+<td align="center">4,101219331</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">0,36</td>
+<td align="center">7,84</td>
+<td align="center">1,69</td>
+<td align="center">4,210701</td>
+<td align="center">4,210700654</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">1,96</td>
+<td align="center">9,61</td>
+<td align="center">1</td>
+<td align="center">4,644351</td>
+<td align="center">4,444097209</td>
+</tr>
+<tr>
+<td align="center">7,29</td>
+<td align="center">0,36</td>
+<td align="center">10,89</td>
+<td align="center">1,21</td>
+<td align="center">4,444097</td>
+<td align="center">4,53431362</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">0,16</td>
+<td align="center">11,56</td>
+<td align="center">1</td>
+<td align="center">4,534314</td>
+<td align="center">4,644351408</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">1,96</td>
+<td align="center">11,56</td>
+<td align="center">1,44</td>
+<td align="center">4,774935</td>
+<td align="center">4,746577715</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">0,04</td>
+<td align="center">12,96</td>
+<td align="center">1,69</td>
+<td align="center">4,746578</td>
+<td align="center">4,774934555</td>
+</tr>
+</tbody>
+</table>
+<p>Class : Versicolor</p>
+<table>
+<thead>
+<tr>
+<th align="center">K=5</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">e</td>
+<td align="center">1/e</td>
+<td align="center">setosa</td>
+<td align="center">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="center">0,141421</td>
+<td align="center">7,07106782</td>
+<td align="center">0</td>
+<td align="center">7,07106782</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,387298</td>
+<td align="center">2,58198889</td>
+<td align="center">0</td>
+<td align="center">2,58198889</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,458258</td>
+<td align="center">2,1821789</td>
+<td align="center">0</td>
+<td align="center">2,1821789</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,72111</td>
+<td align="center">1,38675049</td>
+<td align="center">0</td>
+<td align="center">1,38675049</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,787401</td>
+<td align="center">1,27000127</td>
+<td align="center">0</td>
+<td align="center">1,27000127</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">
@@ -2150,5 +4517,5 @@ print('Prediksi Training Bayes: %d of %d == %f %%' % (corrects, len(data), corre
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-10-10 03:05:10
+Build Date UTC : 2019-11-07 03:59:47
 -->
