@@ -4434,6 +4434,239 @@ print('Prediksi Training Bayes: %d of %d == %f %%' % (corrects, len(data), corre
 <td align="center">0</td>
 </tr>
 </tbody>
+</table>
+<h4 id="fuzzy-c-means">FUZZY C MEANS</h4>
+<p>​   K-Means Clustering adalah salah satu algoritma klasifikasi data yang cukup banyak dipakai untuk memecahkan masalah. Hanya saja metode tersebut tidak memiliki nilai pengembalian berupa sebuah nilai pembanding untuk masing-masing cluster, sehingga digunakan algoritma Fuzzy untuk menghitung skor dari sebuah data. Berikut untuk cara perhitungan data dengan fuzzy c means:</p>
+<ol>
+<li>
+<p>Input data yang akan dicluster <em>X</em>, berupa matriks berukuran <em>n x m</em> (<em>n</em>=jumlah sample data, <em>m</em>=atribut setiap data). <em>Xij</em>=data sample ke-<em>i</em> (<em>i</em>=1,2,…,<em>n</em>), atribut ke-<em>j</em> (<em>j</em>=1,2,…,<em>m</em>).</p>
+</li>
+<li>
+<p>Tentukan :</p>
+</li>
+<li>
+<p>Jumlah cluster                                     = <em>c</em></p>
+</li>
+<li>Pangkat                                                  = <em>w</em></li>
+<li>Maksimum iterasi                                = <em>MaxIter</em></li>
+<li>Error terkecil yang diharapkan         = <em>ξ</em></li>
+<li>Fungsi obyektif awal                            = <em>Po</em> =0</li>
+<li>
+<p>Iterasi awal                                             = <em>t</em>   =</p>
+</li>
+<li>
+<p>Bangkitkan nilai acak μik, i=1,2,…,n; k=1,2,…,c sebagai elemen-elemen matriks partisi awal μik. μik adalah derajat keanggotaan yang merujuk pada seberapa besar kemungkinan suatu data bisa menjadi anggota ke dalam suatu cluster.Posisi dan nilai matriks dibangun secara random. Dimana nilai keangotaan terletak pada interval 0 sampai dengan 1. Pada posisi awal matriks partisi U masih belum akurat begitu juga pusat clusternya. Sehingga kecendrungan data untuk masuk suatu cluster juga belum akurat.</p>
+</li>
+<li>
+<p>Hitung pusat <em>Cluster</em> ke-k: <em>Vkj</em> ,dengan <em>k</em>=1,2,…c dan <em>j</em>=1,2,…m. dimana <em>Xij</em>adalah variabel fuzzy yang digunakan dan <em>w</em> adalah bobot.</p>
+</li>
+<li>
+<p>Hitung fungsi obyektif pada iterasi ke-<em>t</em>, Pt</p>
+</li>
+<li>
+<p>Perhitungan fungsi objektif <em>Pt</em> dimana nilai variabel fuzzy <em>Xij</em> di kurang dengan dengan pusat cluster <em>Vkj</em>kemudian hasil pengurangannya di kuadradkan lalu masing-masing hasil kuadrad di jumlahkan untuk dikali dengan kuadrad dari derajat keanggotaan <em>μ</em>ik untuk tiap <em>cluster</em>. Setelah itu jumlahkan semua nilai di semua <em>cluster</em> untuk mendapatkan fungsi objektif <em>Pt.</em></p>
+</li>
+<li>
+<p>Hitung perubahan matriks partisi, </p>
+</li>
+<li>
+<ol>
+<li>dengan: <em>i</em>=1,2,…n dan <em>k</em>=1,2,..<em>c</em>.
+      Untuk mencari perubahan matrik partisi <em>μ</em>ik,pengurangan nilai variabel fuzzy <em>Xij</em> di lakukan kembali terhadap pusat cluster <em>Vkj</em>lalu dikuadradkan.  Kemudian dijumlahkan lalu dipangkatkan dengan -1/(<em>w</em>-1) dengan bobot, <em>w</em>=2 hasilnya setiap data dipangkatkan dengan -1. Setelah proses perhitungan dilakukan, normalisasikan semua data derajat keanggotaan baru dengan cara menjumlahkan derajat keanggotaan baru <em>k</em>=1,…<em>c</em>, hasilnya kemudian dibagi dengan derajat keanggotaan yang baru. Proses ini dilakukan agar derajat keanggotaan yang baru mempunyai rentang antara 0 dan tidak lebih dari 1.</li>
+</ol>
+</li>
+<li></li>
+<li>
+<p>Cek kondisi berhenti:a)    jika:( <em>|Pt – Pt-1 |&lt; ξ</em>) atau (<em>t</em>&gt;maxIter) maka berhenti.b)   jika tidak, <em>t=t</em>+1, ulangi langkah ke-4.</p>
+</li>
+</ol>
+<p>codingnya:</p>
+<pre><code class="python">import pandas as pd
+from pandas import DataFrame
+import random
+import numpy as np
+from IPython.display import HTML, display
+from tabulate import tabulate
+from math import log
+from sklearn.feature_selection import mutual_info_classif
+
+def table(df): display(HTML(tabulate(df, tablefmt='html', headers='keys', showindex=False)))
+
+</code></pre>
+
+<pre><code class="python">Data = read_csv('leaf.csv', sep=',')
+Data = Data[['Eccentricity','Solidity', 'Lobedness', 'Entropy']].sample(6, random_state=42)
+D = Data.values
+print(&quot;Table (D) &gt;&gt;&quot;)
+table(D)
+
+</code></pre>
+
+<pre><code class="python">n, m, c, w, T, e, P0, t = *D.shape, 3, 2, 10, 0.1, 0, 1
+print(&quot;Variables &gt;&gt;&quot;)
+print(&quot; n = %d\n m = %d\n c = %d\n w = %d\n T = %d\n e = %f\n P0 = %d\n t = %d&quot; % (n, m, c, w, T, e, P0, t))
+Variables &gt;&gt;
+ n = 6
+ m = 5
+ c = 3
+ w = 2
+ T = 10
+ e = 0.100000
+ P0 = 0
+ t = 1
+
+</code></pre>
+
+<pre><code class="python">random.seed(42)
+U = np.array([[random.uniform(0, 1) for _ in range(c)] for _ in range(n)])
+print(&quot;U &gt;&gt;\n&quot;)
+print(U)
+</code></pre>
+
+<pre><code class="python"># Caution: NP Array is math-agnostic (column-by-column)
+def cluster(U, D, x, y): return sum([U[i,y]**w*D[i,x] for i in range(n)])/sum([U[i,y]**w for i in range(n)])
+V = np.array([[cluster(U,D,x,y) for x in range(m)] for y in range(c)])
+print(&quot;V &gt;&gt;\n&quot;)
+print(V)
+</code></pre>
+
+<pre><code class="python">#perhitungan ulang matriks derajat klaster
+def converge(V,D,i,k): return (sum([(D[i,j]-V[k,j])**2 for j in range(m)])**(-1/(w-1)))/sum([sum([(D[i,j]-V[k,j])**2 for j in range(m)])**(-1/(w-1)) for k in range(c)])
+print(&quot;U &gt;&gt;\n&quot;)
+np.array([[converge(V,D,i,k) for k in range(c)] for i in range(n)])
+</code></pre>
+
+<pre><code class="python">#perhitungan literasi pemberhentian
+def iterate(U):
+    V = np.array([[cluster(U, D, x, y) for x in range(m)] for y in range(c)])
+    return np.array([[converge(V,D,i,k) for k in range(c)] for i in range(n)]), objective(V,U,D)
+
+def fuzzyCM(U):
+    #U = np.array([[random.uniform(0, 1) for _ in range(c)] for _ in range(n)])
+
+    U, P2, P, t = *iterate(U), 0, 1
+    while abs(P2 - P) &gt; e and t &lt; T:
+        U, P2, P, t = *iterate(U), P2, t+1
+    return U, t
+
+FuzzyResult, FuzzyIters = fuzzyCM(U)
+print(&quot;Iterating %d times, fuzzy result &gt;&gt; \n&quot; % FuzzyIters)
+print(FuzzyResult)
+</code></pre>
+
+<pre><code class="python">#pengambilan rata-rata/nilai besar pada klaster
+table(DataFrame([D[i].tolist()+[np.argmax(FuzzyResult[i].tolist())] for i in range(n)], columns=Data.columns.tolist()+[&quot;Cluster Index&quot;]))
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="center">6</th>
+<th align="center">0</th>
+<th align="center">75</th>
+<th align="center">200</th>
+<th>16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">63</td>
+<td align="center">200</td>
+<td>10</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">66</td>
+<td align="center">50</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">57</td>
+<td align="center">200</td>
+<td>9</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">81</td>
+<td align="center">200</td>
+<td>18</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">67</td>
+<td align="center">200</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">O-Ring</th>
+<th align="center">Thermal</th>
+<th align="center">Temperature</th>
+<th align="right">Leak</th>
+<th align="center">Temporal</th>
+<th align="center">Cluster Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">75</td>
+<td align="right">200</td>
+<td align="center">16</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">63</td>
+<td align="right">200</td>
+<td align="center">10</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">66</td>
+<td align="right">50</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">57</td>
+<td align="right">200</td>
+<td align="center">9</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">81</td>
+<td align="right">200</td>
+<td align="center">18</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">67</td>
+<td align="right">200</td>
+<td align="center">13</td>
+<td align="center">1</td>
+</tr>
+</tbody>
 </table></div>
         </div>
 
@@ -4517,5 +4750,5 @@ print('Prediksi Training Bayes: %d of %d == %f %%' % (corrects, len(data), corre
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-11-07 03:59:47
+Build Date UTC : 2019-11-14 04:09:51
 -->
