@@ -1,0 +1,4754 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#nama-oktaviana-dwi-sujatmiko">Nama : Oktaviana Dwi Sujatmiko</a></li>
+        <li class="main "><a href="#nim-180411100021">NIM : 180411100021</a></li>
+        <li class="main "><a href="#teknik-informatika">TEKNIK INFORMATIKA</a></li>
+        <li class="main "><a href="#penambangan-data-3b">PENAMBANGAN DATA 3B</a></li>
+        <li class="main "><a href="#statistik-deskriptif">Statistik Deskriptif</a></li>
+            <li><a href="#3-modus">3.  Modus</a></li>
+            <li><a href="#4-variansi-dan-standart-variansi">4. Variansi dan standart Variansi</a></li>
+            <li><a href="#5-range">5. Range</a></li>
+            <li><a href="#6-quartil">6. Quartil</a></li>
+            <li><a href="#7-skewness">7. Skewness</a></li>
+        <li class="main "><a href="#mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</a></li>
+            <li><a href="#mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</a></li>
+            <li><a href="#overlay-metric">Overlay Metric</a></li>
+            <li><a href="#value-difference-metric-vdm">Value Difference Metric (VDM)</a></li>
+            <li><a href="#minimum-risk-metric-mrm">Minimum Risk Metric (MRM)</a></li>
+            <li><a href="#mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</a></li>
+            <li><a href="#selection-feature">SELECTION FEATURE</a></li>
+            <li><a href="#naive-bayes">Naive Bayes</a></li>
+            <li><a href="#knn">KNN</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="nama-oktaviana-dwi-sujatmiko">Nama : Oktaviana Dwi Sujatmiko</h2>
+<h2 id="nim-180411100021">NIM : 180411100021</h2>
+<h2 id="teknik-informatika">TEKNIK INFORMATIKA</h2>
+<h1 id="penambangan-data-3b">PENAMBANGAN DATA 3B</h1>
+<h1 id="statistik-deskriptif">Statistik Deskriptif</h1>
+<p>Statistik deskriptif adalah salah satu bagian dari ilmu statistika yang berhubungan dengan aktivitas penghimpunan, penataan, peringkasan dan penyajian data dengan harapan agar data lebih bermakna, mudah dibaca dan mudah dipahami oleh pengguna data. Statistik deskriptif hanya sebatas memberikan deskripsi atau gambaran umum tentang karakteristik objek yang diteliti tanpa maksud untuk melakukan generalisasi sampel terhadap populasi.</p>
+<p>​   Kegiatan dalam statistik deskriptif meliputi pengumpulan, pengelompokan dan pengolahan data yang selanjutnya akan menghasilkan ukuran-ukuran statistik seperti frekuensi, pemusatan data, penyebaran data, kecenderungan suatu gugus data dan lain-lain. Selain itu, agar data lebih mudah dibaca dan dipahami maka data dapat diringkas dalam bentuk tabulasi atau disajikan dalam bentuk grafik atau diagram, beberapa yang akan kita bahas yaitu :</p>
+<ul>
+<li>
+<p>Rata-rata</p>
+</li>
+<li>
+<p>Median</p>
+</li>
+<li>
+<p>Modus</p>
+</li>
+<li>
+<p>Variansi</p>
+</li>
+<li>
+<p>Standar Deviasi</p>
+</li>
+<li>
+<p>Range </p>
+</li>
+<li>
+<p>Quartil</p>
+</li>
+<li>
+<p>Skewness</p>
+</li>
+</ul>
+<p>## 1. Rata - rata</p>
+<p>​ Rata-rata adalah nilai yang mewakili sekelompok data. Rata-rata diperoleh dari penjumlahan seluruh nilai data dibagi dengan banyaknya data.</p>
+<p>## 2. Median</p>
+<p>​ Untuk data miring (asimetris), ukuran pusat data yang lebih baik adalah median, yang merupakan nilai tengah dalam satu set nilai data yang diurutkan. Ini adalah nilai yang memisahkan separuh data yang lebih tinggi dari data tersebut dan sebagian data yang lebih rendah dari data tersebut. Dalam probabilitas dan statistik, median umumnya berlaku untuk data numerik; namun, kami dapat memperluas konsep menjadi data ordinal. Misalkan kumpulan N data yang diberikan untuk atribut X diurutkan dalam urutan naik. Jika N ganjil, maka median adalah nilai tengah dari data yang ordinal. Jika N adalah genap, maka mediannya tidak unik; dihitung dengan rata rata dari nilai </p>
+<h2 id="3-modus">3.  Modus</h2>
+<p>Modus adalah nilai yang sering muncul dalam sekelompok data.</p>
+<h2 id="4-variansi-dan-standart-variansi">4. Variansi dan standart Variansi</h2>
+<p><em>Varian</em> adalah rata-rata jarak kuadrat antara data ke rata-rata.</p>
+<h2 id="5-range">5. Range</h2>
+<p><em>Jangkauan (Range)</em> adalah ukuran dari selisih nilai maksimum dengan nilai minimum yang ada dalam sekelompok data.R = x_{max} - x_{min} <em>R</em>=xmax−xmin</p>
+<h2 id="6-quartil">6. Quartil</h2>
+<p>Kuartil memberikan gambaran pusat distribus, penyebaran, dan bentuk distribusi. Kuartil satu, dilambangkan oleh Q1, adalah persentil ke-25. Nilai ini menunjukan 25% terendah dari data. Kuartil ketiga, dilambangkan oleh Q3, adalah persentil ke-75 - itu memisahkan data 75% dari terendah data (atau 25% dari tertinggi data. </p>
+<h2 id="7-skewness">7. Skewness</h2>
+<p>​   Derajat distorsi dari kurva lonceng simetris atau distribusi normal. Ini mengukur kurangnya simetri dalam distribusi data Untuk menghitung derajat distorisi dapat menggunakan Koefisien Kemencengan Pearson yang diperoleh dengan menggunakan nilai selisih rata-rata dengan modus dibagi simpangan baku.</p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\10.PNG" /></p>
+<p><img alt="11" src="C:\Users\ASUS\newdatamining\foto\11.PNG" /></p>
+<p><img alt="12" src="C:\Users\ASUS\newdatamining\foto\12.PNG" /></p>
+<p><img alt="13" src="C:\Users\ASUS\newdatamining\foto\13.PNG" /></p>
+<h1 id="mengukur-jarak-atribut-binary">Mengukur Jarak Atribut Binary</h1>
+<h4 id="mengukur-jarak-tipe-categorical">Mengukur Jarak Tipe categorical</h4>
+<h3 id="overlay-metric"><em>Overlay Metric</em></h3>
+<p>Ketika semua atribut adalah bertipe nominal, ukuran jarak yang paling sederhana adalah dengan Ovelay Metric (OM) yang dinyatakan dengan dimana nn adalah banyaknya atribut, ai(x)ai(x) dan ai(y)ai(y) adalah nilai atribut ke ii yaitu AiAi dari masing masing objek xx dan yy, δ (ai(x),ai(y))δ (ai(x),ai(y)) adalah 0 jika ai(x)=ai(y)ai(x)=ai(y) dan 1 jika sebaliknya.</p>
+<p>OM banyak digunakan oleh instance-based learning dan locally weighted learning. Jelas sekali , ini sedikit beruk untuk mengukur jarak antara masing-masing pasangan sample, karena gagal memanfaatkan tambahan informasi yang diberikan oleh nilai atribut nominal yang bisa membantu dalam generalisasi.</p>
+<h3 id="value-difference-metric-vdm"><em>Value Difference Metric (VDM)</em></h3>
+<p>VDM dikenalkan oleh Standfill and Waltz, versi sederhana dari VDM tanpa skema pembobotan didefinsisikan dengan dimana CCadalah banyaknya kelas, P(c|ai(x))P(c|ai(x)) adalah probabilitas bersyarat dimana kelas xx adalah cc dari atribut AiAi, yang memiliki nilai ai(x)ai(x), P(c|ai(y))P(c|ai(y)) adalah probabilitas bersyarat dimana kelas yy adalah cc dengan atribut AiAi memiliki nilai ai(y)ai(y)</p>
+<p>VDM mengasumsikan bahwa dua nilai dari atribut adalah lebih dekat jika memiliki klasifikasi sama. Pendekatan lain berbasi probabilitas adalah SFM (Short and Fukunaga Metric) yang kemudian dikembangkan oleh Myles dan Hand dan didefinisikan.</p>
+<h3 id="minimum-risk-metric-mrm"><em>Minimum Risk Metric (MRM)</em></h3>
+<p>Ukuran ini dipresentasikan oleh Blanzieri and Ricci, berbeda dari SFM yaitu meminimumkan selisih antara kesalahan berhingga dan kesalahan asymtotic. MRM meminimumkan risk of misclassification yang didefinisikan.</p>
+<h2 id="mengukur-jarak-tipe-ordinal">Mengukur Jarak Tipe Ordinal</h2>
+<p>Nilai-nilai atribut ordinal memiliki urutan atau peringkat, namun besarnya antara nilai-nilai berturut-turut tidak diketahui. Contohnya tingkatan kecil, sedang, besar untuk atribut ukuran. Atribut ordinal juga dapat diperoleh dari diskritisasi atribut numerik dengan membuat rentang nilai ke dalam sejumlah kategori tertentu. Kategori-kategori ini disusun dalam peringkat. Yaitu, rentang atribut numerik dapat dipetakan ke atribut ordinal ff yang memiliki MfMf state. Misalnya, kisaran suhu atribut skala-skala (dalam Celcius)dapat diatur ke dalam status berikut: −30 hingga −10, −10 hingga 10, 10 hingga 30, masing-masing mewakili kategori suhu dingin, suhu sedang, dan suhu hangat. MM adalah jumlah keadaan yang dapat dilakukan oleh atribut ordinalmemiliki. State ini menentukan peringkat 1,...,Mf1,...,Mf</p>
+<p>Perlakuan untuk atribut ordinal adalah cukup sama dengan atribut numerik ketika menghitung disimilarity antara objek. Misalkan ff adalah atribut-atribut dari atribut ordinal dari nn objek. Menghitung disimilarity terhadap f fitur sebagai berikut:</p>
+<ul>
+<li>
+<p>Nilai ff untuk objek ke-ii adalah xifxif, dan ff memiliki MfMf status urutan , mewakili peringkat 1,..,Mf1,..,Mf Ganti setiap xifxif dengan peringkatnya, rif∈{1...Mf}rif∈{1...Mf}</p>
+</li>
+<li>
+<p>Karena setiap atribut ordinal dapat memiliki jumlah state yang berbeda, diperlukan untuk memetakan rentang setiap atribut ke [0,0, 1.0] sehingga setiap atribut memiliki bobot yang sama. Perl melakukan normalisasi data dengan mengganti peringkat rifrif denganzif=rif−1Mf−1zif=rif−1Mf−1</p>
+</li>
+<li>
+<p>Dissimilarity kemudian dihitung dengan menggunakan ukuran jarak seperti atribut numerik dengan data yang baru setelah ditransformasi $ z _ { i f }</p>
+</li>
+</ul>
+<p>## Menghitung Jarak Tipe Campuran</p>
+<p>Menghitung ketidaksamaan antara objek dengan atribut campuran yang berupa nominal, biner simetris, biner asimetris, numerik, atau ordinal yang ada pada kebanyakan databasae dapat dinyatakan dengan memproses semua tipe atribut secara bersamaan. Salah satu teknik tersebut menggabungkan atribut yang berbeda ke dalam matriks ketidaksamaan tunggal dan menyatakannya dengan skala interval antar [0,0,1.0][0,0,1.0]. Misalkan data berisi atribut pp tipe campuran. Ketidaksamaan (disimilarity ) antara objek ii dan jj dinyatakan dengan</p>
+<p>d(i,j)=∑pf=1δ(f)ijd(f)ij∑pf=1δ(f)ijd(i,j)=∑f=1pδij(f)dij(f)∑f=1pδij(f)</p>
+<p>dimana δfij=0δijf=0 - jika xifxif atau xjfxjf adalah hilang (i.e., tidak ada pengukuran dari atribut f untuk objek ii atau objek jj)</p>
+<ul>
+<li>jika xif=xjf=0xif=xjf=0 dan</li>
+<li>atribut ff adalah binary asymmetric,</li>
+</ul>
+<p>selain itu δfij=1δijf=1</p>
+<p>Kontribusi dari atribut ff untuk dissimilarity antara i dan j (yaitu.dfijdijf) dihitung bergantung pada tipenya,</p>
+<ul>
+<li>
+<p>Jika ff adalah numerik, dfij=∥xif−xjf∥maxhxhf−minhxhfdijf=‖xif−xjf‖maxhxhf−minhxhf, di mana h menjalankan semua nilai objek yang tidak hilang untuk atribut f</p>
+</li>
+<li>
+<p>Jika ff adalah nominal atau binary,$d_{ij}^{f}=0 $jika xif=xjfxif=xjf, sebaliknya dfij=1dijf=1</p>
+</li>
+<li>
+<p>Jika ff adalah ordinal maka hitung rangking rifrif dan zif=rif−1Mf−1zif=rif−1Mf−1 , dan perlakukan zifzif sebagai numerik.</p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\14.PNG" /></p>
+<p><img alt="15" src="C:\Users\ASUS\newdatamining\foto\15.PNG" /></p>
+<p><img alt="16" src="C:\Users\ASUS\newdatamining\foto\16.PNG" /></p>
+</li>
+</ul>
+<h2 id="selection-feature">SELECTION FEATURE</h2>
+<p>Pemilihan (seleksi) data dari sekumpulan data operasional perlu dilakukan sebelum tahap penggalian informasi dalam KDD dimulai. Data hasil seleksi yang digunakan untuk proses data mining, disimpan dalam suatu berkas, terpisah dari basis data operasional.</p>
+<p>Entropy Target</p>
+<ul>
+<li>
+<p>Entropy (S) merupakan jumlah bit yang diperkirakan dibutuhkan untuk dapat mengekstrak suatu kelas (+ atau -) dari sejumlah data acak pada ruang sampel S.</p>
+</li>
+<li>
+<p>Entropy dapat dikatakan sebagai kebutuhan bit untuk menyatakan suatu kelas.</p>
+</li>
+<li>
+<p>Entropy digunakan untuk mengukur ketidakaslian S.</p>
+</li>
+</ul>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\8.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\2.PNG" /></p>
+<p><img alt="3" src="C:\Users\ASUS\newdatamining\foto\3.PNG" /></p>
+<p><img alt="4" src="C:\Users\ASUS\newdatamining\foto\4.PNG" /></p>
+<p>Information GAIN</p>
+<ul>
+<li>
+<p>Gain (S,A) merupakan perolehan informasi dari atribut A relative terhadap output data S.</p>
+</li>
+<li>
+<p>Perolehan informasi didapat dari output data atau variable dependent S yang dikelompokkan berdasarkan atribut A, dinotasikan dengan gain (S,A).</p>
+</li>
+</ul>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\9.PNG" /></p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto\5.PNG" /></p>
+<p><img alt="6" src="C:\Users\ASUS\newdatamining\foto\6.PNG" /></p>
+<p><img alt="7" src="C:\Users\ASUS\newdatamining\foto\7.PNG" /></p>
+<h2 id="naive-bayes">Naive Bayes</h2>
+<p><strong>Algoritma Naive Bayes</strong> merupakan sebuah metoda klasifikasi menggunakan metode probabilitas dan statistik yg dikemukakan oleh ilmuwan Inggris Thomas Bayes. <strong>Algoritma Naive Bayes</strong> memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya sehingga dikenal sebagai Teorema Bayes. Ciri utama dr Naïve Bayes Classifier ini adalah asumsi yg sangat kuat (naïf) akan independensi dari masing-masing kondisi / kejadian.</p>
+<p>Naive Bayes Classifier bekerja sangat baik dibanding dengan model classifier lainnya. Hal ini dibuktikan pada jurnal <em>Xhemali, Daniela, Chris J. Hinde, and Roger G. Stone. “Naive Bayes vs. decision trees vs. neural networks in the classification of training web pages.” (2009),</em> mengatakan bahwa “Naïve Bayes Classifier memiliki tingkat akurasi yg lebih baik dibanding model classifier lainnya”.</p>
+<p>Keuntungan penggunan adalah bahwa metoda ini hanya membutuhkan jumlah data pelatihan (training data) yang kecil untuk menentukan estimasi parameter yg diperlukan dalam proses pengklasifikasian. Karena yg diasumsikan sebagai variabel independent, maka hanya varians dari suatu variabel dalam sebuah kelas yang dibutuhkan untuk menentukan klasifikasi, bukan keseluruhan dari matriks kovarians.</p>
+<p>Tahapan dari proses algoritma Naive Bayes adalah:</p>
+<ol>
+<li>Menghitung jumlah kelas / label.</li>
+<li>Menghitung Jumlah Kasus Per Kelas</li>
+<li>Kalikan Semua Variable Kelas</li>
+<li>Bandingkan Hasil Per Kelas</li>
+</ol>
+<h4 id="1-kelebihan-kekurangan-naive-bayes"><strong>1. Kelebihan &amp; Kekurangan Naive Bayes</strong></h4>
+<p><strong>Kelebihan</strong></p>
+<ul>
+<li>Mudah untuk dibuat</li>
+<li>Hasil bagus</li>
+</ul>
+<p><strong>Kekurangan</strong></p>
+<ul>
+<li>Asumsi independence antar atribut membuat akurasi berkurang (karena biasanya ada keterkaitan)</li>
+</ul>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto1\51.PNG" /></p>
+<p><strong>Keterangan :</strong>
+  <strong><em>x</em></strong> : Data dengan class yang belum diketahui
+  <strong><em>c</em></strong> : Hipotesis data merupakan suatu class spesifik
+  <strong><em>P(c|x)</em></strong> : Probabilitas hipotesis berdasar kondisi (posteriori probability)
+  <strong><em>P(c)</em></strong> : Probabilitas hipotesis (prior probability)
+  <strong><em>P(x|c)</em></strong> : Probabilitas berdasarkan kondisi pada hipotesis
+  <strong><em>P(x)</em></strong> : Probabilitas c</p>
+<p>Rumus diatas menjelaskan bahwa peluang masuknya sampel karakteristik tertentu dalam kelas C (Posterior) adalah peluang munculnya kelas C (sebelum masuknya sampel tersebut, seringkali disebut prior), dikali dengan peluang kemunculan karakteristik karakteristik sampel pada kelas C (disebut juga likelihood), dibagi dengan peluang kemunculan karakteristik  sampel secara global ( disebut juga evidence). </p>
+<p>Nilai Evidence selalu tetap untuk setiap kelas pada satu sampel. Nilai dari posterior tersebut nantinya akan dibandingkan dengan nilai nilai posterior kelas lainnya untuk menentukan ke kelas apa suatu sampel akan diklasifikasikan. Penjabaran lebih lanjut rumus Bayes tersebut dilakukan dengan menjabarkan <em>(c|x1,…,xn)</em> menggunakan aturan perkalian </p>
+<p>Dapat dilihat bahwa hasil penjabaran tersebut menyebabkan semakin banyak dan semakin kompleksnya faktor faktor syarat yang mempengaruhi nilai probabilitas, yang hampir mustahil untuk dianalisa satu persatu. Akibatnya, perhitungan tersebut menjadi sulit untuk dilakukan. Disinilah digunakan asumsi independensi yang sangat tinggi (naif), bahwa masing masing petunjuk saling bebas (independen) satu sama lain. Dengan asumsi tersebut, maka berlaku suatu kesamaan sebagai berikut:</p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto1\52.PNG" /></p>
+<p>Persamaan diatas merupakan model dari <strong>Teorema Naive Bayes</strong> yang selanjutnya akan digunakan dalam proses klasifikasi. Untuk klasifikasi dengan data kontinyu digunakan rumus Densitas Gauss :</p>
+<p><img alt="" src="C:\Users\ASUS\newdatamining\foto1\53.PNG" /></p>
+<h6 id="pengambilan-data-set">pengambilan data set</h6>
+<pre><code class="python">from sklearn import datasets`
+`from pandas import *`
+`from numpy import *`
+`from math import *`
+
+`from IPython.display import HTML, display; from tabulate import tabulate`
+</code></pre>
+
+<pre><code class="python">def table(df): display(HTML(tabulate(df, tablefmt='html', headers='keys', showindex=False)))`
+
+`from sklearn import datasets`
+`from pandas import *`
+`from numpy import *`
+`from math import *`
+
+`from IPython.display import HTML, display; from tabulate import tabulate`
+`def table(df): display(HTML(tabulate(df, tablefmt='html', headers='keys', showindex=False)))
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="right">sepal length (cm)</th>
+<th align="right">sepal width (cm)</th>
+<th align="right">petal length (cm)</th>
+<th align="right">petal width (cm)</th>
+<th align="center">class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">4.4</td>
+<td align="right">3</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">7.7</td>
+<td align="right">3.8</td>
+<td align="right">6.7</td>
+<td align="right">2.2</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.2</td>
+<td align="right">3.2</td>
+<td align="right">6</td>
+<td align="right">1.8</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.4</td>
+<td align="right">1.6</td>
+<td align="right">0.4</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">2.7</td>
+<td align="right">5.3</td>
+<td align="right">1.9</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.5</td>
+<td align="right">1.3</td>
+<td align="right">0.3</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">6.2</td>
+<td align="right">2.2</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.8</td>
+<td align="right">5.1</td>
+<td align="right">1.5</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">4.4</td>
+<td align="right">1.5</td>
+<td align="right">0.4</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.6</td>
+<td align="right">3.6</td>
+<td align="right">1</td>
+<td align="right">0.2</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">7.4</td>
+<td align="right">2.8</td>
+<td align="right">6.1</td>
+<td align="right">1.9</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.4</td>
+<td align="right">3.8</td>
+<td align="right">1.1</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">3.4</td>
+<td align="right">4.5</td>
+<td align="right">1.6</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.5</td>
+<td align="right">2.3</td>
+<td align="right">1.3</td>
+<td align="right">0.3</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">7.3</td>
+<td align="right">2.9</td>
+<td align="right">6.3</td>
+<td align="right">1.8</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.5</td>
+<td align="right">3</td>
+<td align="right">5.5</td>
+<td align="right">1.8</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.4</td>
+<td align="right">3.7</td>
+<td align="right">1</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.9</td>
+<td align="right">3.2</td>
+<td align="right">5.7</td>
+<td align="right">2.3</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.2</td>
+<td align="right">3</td>
+<td align="right">5.8</td>
+<td align="right">1.6</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">6.8</td>
+<td align="right">3.2</td>
+<td align="right">5.9</td>
+<td align="right">2.3</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">3</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">2.3</td>
+<td align="right">3.3</td>
+<td align="right">1</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">2.5</td>
+<td align="right">3.9</td>
+<td align="right">1.1</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.9</td>
+<td align="right">5.6</td>
+<td align="right">1.8</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">3.2</td>
+<td align="right">5.3</td>
+<td align="right">2.3</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">2.4</td>
+<td align="right">3.3</td>
+<td align="right">1</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.1</td>
+<td align="center">setosa</td>
+</tr>
+</tbody>
+</table>
+<p><code>test = [5,6,8,9]</code>
+<code>print("sampel data: ", test)</code></p>
+<pre><code>sampel data:  [5, 6, 8, 9]
+</code></pre>
+
+<h6 id="identifikasi-per-grub-class-target-untuk-data-mining-serta-perhitungan-probabilitas-prior-dan-likehood">identifikasi per grub class target untuk data mining serta perhitungan Probabilitas Prior dan Likehood</h6>
+<pre><code class="python">dataset_classes = {}`
+`for key,group in dataset.groupby('class'):`
+    `mu_s = [group[c].mean() for c in group.columns[:-1]]`
+    `sigma_s = [group[c].std() for c in group.columns[:-1]]`
+    `dataset_classes[key] = [group, mu_s, sigma_s]`
+    `print(key, &quot;===&gt;&quot;)`
+    `print('Mu_s =&gt;', array(mu_s))`
+    `print('Sigma_s =&gt;', array(sigma_s))`
+    `table(group)`
+`def numericalPriorProbability(v, mu, sigma):`
+    `return (1.0/sqrt(2 * pi * (sigma ** 2))*exp(-((v-mu)**2)/(2*(sigma**2))))`
+
+`def categoricalProbability(sample,universe):`
+    `return sample.shape[0]/universe.shape[0]`
+
+`Ps = ([[y]+[numericalPriorProbability(x, d[1][i], d[2][i]) for i,x in enumerate(test)]+`
+          `[categoricalProbability(d[0],dataset)] for y,d in dataset_classes.items()])`
+
+`table(DataFrame(Ps, columns=[&quot;classes&quot;]+[&quot;P( %d | C )&quot; % d for d in test]+[&quot;P( C )&quot;]))`
+`Pss = ([[r[0], prod(r[1:])] for r in Ps])`
+`PDss = DataFrame(Pss, columns=['class', 'probability']).sort_values('probability')[::-1]`
+`table(PDss)
+</code></pre>
+
+<pre><code>setosa ===&gt;
+Mu_s =&gt; [4.89 3.35 1.37 0.25]
+Sigma_s =&gt; [0.36040101 0.55025247 0.16363917 0.09718253]
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="right">sepal length (cm)</th>
+<th align="right">sepal width (cm)</th>
+<th align="right">petal length (cm)</th>
+<th align="right">petal width (cm)</th>
+<th align="right">class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">4.4</td>
+<td align="right">3</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.4</td>
+<td align="right">1.6</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.5</td>
+<td align="right">1.3</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">4.4</td>
+<td align="right">1.5</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">4.6</td>
+<td align="right">3.6</td>
+<td align="right">1</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">4.5</td>
+<td align="right">2.3</td>
+<td align="right">1.3</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.1</td>
+<td align="right">setosa</td>
+</tr>
+</tbody>
+</table>
+<pre><code>versicolor ===&gt;
+Mu_s =&gt; [5.5375 2.575  3.9375 1.225 ]
+Sigma_s =&gt; [0.44057592 0.40970373 0.51252178 0.26049404]
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="right">sepal length (cm)</th>
+<th align="right">sepal width (cm)</th>
+<th align="right">petal length (cm)</th>
+<th align="right">petal width (cm)</th>
+<th align="right">class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">6.2</td>
+<td align="right">2.2</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.4</td>
+<td align="right">3.8</td>
+<td align="right">1.1</td>
+<td align="right">versicolor</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">3.4</td>
+<td align="right">4.5</td>
+<td align="right">1.6</td>
+<td align="right">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.4</td>
+<td align="right">3.7</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">3</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">2.3</td>
+<td align="right">3.3</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">2.5</td>
+<td align="right">3.9</td>
+<td align="right">1.1</td>
+<td align="right">versicolor</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">2.4</td>
+<td align="right">3.3</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+</tr>
+</tbody>
+</table>
+<pre><code>virginica ===&gt;
+Mu_s =&gt; [6.86666667 3.05833333 5.775      1.93333333]
+Sigma_s =&gt; [0.48679533 0.29374799 0.45949577 0.27743413]
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="right">sepal length (cm)</th>
+<th align="right">sepal width (cm)</th>
+<th align="right">petal length (cm)</th>
+<th align="right">petal width (cm)</th>
+<th align="right">class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">7.7</td>
+<td align="right">3.8</td>
+<td align="right">6.7</td>
+<td align="right">2.2</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">7.2</td>
+<td align="right">3.2</td>
+<td align="right">6</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">2.7</td>
+<td align="right">5.3</td>
+<td align="right">1.9</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.8</td>
+<td align="right">5.1</td>
+<td align="right">1.5</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">7.4</td>
+<td align="right">2.8</td>
+<td align="right">6.1</td>
+<td align="right">1.9</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">7.3</td>
+<td align="right">2.9</td>
+<td align="right">6.3</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">6.5</td>
+<td align="right">3</td>
+<td align="right">5.5</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">6.9</td>
+<td align="right">3.2</td>
+<td align="right">5.7</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">7.2</td>
+<td align="right">3</td>
+<td align="right">5.8</td>
+<td align="right">1.6</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">6.8</td>
+<td align="right">3.2</td>
+<td align="right">5.9</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.9</td>
+<td align="right">5.6</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">3.2</td>
+<td align="right">5.3</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="right">classes</th>
+<th align="right">P( 5 | C )</th>
+<th align="right">P( 6 | C )</th>
+<th align="right">P( 8 | C )</th>
+<th align="right">P( 9 | C )</th>
+<th align="right">P( C )</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">setosa</td>
+<td align="right">1.05656</td>
+<td align="right">6.66694e-06</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0.333333</td>
+</tr>
+<tr>
+<td align="right">versicolor</td>
+<td align="right">0.43022</td>
+<td align="right">6.50426e-16</td>
+<td align="right">1.77008e-14</td>
+<td align="right">5.48538e-194</td>
+<td align="right">0.266667</td>
+</tr>
+<tr>
+<td align="right">virginica</td>
+<td align="right">0.000525523</td>
+<td align="right">2.27126e-22</td>
+<td align="right">7.03175e-06</td>
+<td align="right">1.87532e-141</td>
+<td align="right">0.4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="right">class</th>
+<th align="center">probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">virginica</td>
+<td align="center">6.29591e-172</td>
+</tr>
+<tr>
+<td align="right">versicolor</td>
+<td align="center">7.2453e-224</td>
+</tr>
+<tr>
+<td align="right">setosa</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<h6 id="percobaan">Percobaan</h6>
+<pre><code class="python">`def predict(sampel):`
+    `priorLikehoods = ([[y]+[numericalPriorProbability(x, d[1][i], d[2][i]) for i,x in enumerate(sampel)]+`
+          `[categoricalProbability(d[0],dataset)] for y,d in dataset_classes.items()])`
+    `products = ([[r[0], prod(r[1:])] for r in priorLikehoods])`
+    `result = DataFrame(products, columns=['class', 'probability']).sort_values('probability')[::-1]`
+    `return result.values[0,0]`
+
+`dataset_test = DataFrame([list(d)+[predict(d[:4])] for d in data], columns=list(dataset.columns)+['predicted class (by predict())'])`
+`table(dataset_test)`
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="right">sepal length (cm)</th>
+<th align="right">sepal width (cm)</th>
+<th align="right">petal length (cm)</th>
+<th align="right">petal width (cm)</th>
+<th align="right">class</th>
+<th align="center">predicted class (by predict())</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.7</td>
+<td align="right">3.2</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.6</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.7</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.6</td>
+<td align="right">3.4</td>
+<td align="right">1.4</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.4</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.4</td>
+<td align="right">2.9</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.1</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.4</td>
+<td align="right">3.7</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.8</td>
+<td align="right">3.4</td>
+<td align="right">1.6</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.8</td>
+<td align="right">3</td>
+<td align="right">1.4</td>
+<td align="right">0.1</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.3</td>
+<td align="right">3</td>
+<td align="right">1.1</td>
+<td align="right">0.1</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.8</td>
+<td align="right">4</td>
+<td align="right">1.2</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">4.4</td>
+<td align="right">1.5</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.3</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">3.8</td>
+<td align="right">1.7</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.8</td>
+<td align="right">1.5</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.4</td>
+<td align="right">3.4</td>
+<td align="right">1.7</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.7</td>
+<td align="right">1.5</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.6</td>
+<td align="right">3.6</td>
+<td align="right">1</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.3</td>
+<td align="right">1.7</td>
+<td align="right">0.5</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.8</td>
+<td align="right">3.4</td>
+<td align="right">1.9</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3</td>
+<td align="right">1.6</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.4</td>
+<td align="right">1.6</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.2</td>
+<td align="right">3.5</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.2</td>
+<td align="right">3.4</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.7</td>
+<td align="right">3.2</td>
+<td align="right">1.6</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.8</td>
+<td align="right">3.1</td>
+<td align="right">1.6</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.4</td>
+<td align="right">3.4</td>
+<td align="right">1.5</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.2</td>
+<td align="right">4.1</td>
+<td align="right">1.5</td>
+<td align="right">0.1</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">4.2</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.2</td>
+<td align="right">1.2</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">3.5</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.1</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.4</td>
+<td align="right">3</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.4</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.5</td>
+<td align="right">1.3</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.5</td>
+<td align="right">2.3</td>
+<td align="right">1.3</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.4</td>
+<td align="right">3.2</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.5</td>
+<td align="right">1.6</td>
+<td align="right">0.6</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.8</td>
+<td align="right">1.9</td>
+<td align="right">0.4</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.8</td>
+<td align="right">3</td>
+<td align="right">1.4</td>
+<td align="right">0.3</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">3.8</td>
+<td align="right">1.6</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">4.6</td>
+<td align="right">3.2</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5.3</td>
+<td align="right">3.7</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">3.3</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="right">setosa</td>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="right">3.2</td>
+<td align="right">4.7</td>
+<td align="right">1.4</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">3.2</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.9</td>
+<td align="right">3.1</td>
+<td align="right">4.9</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.3</td>
+<td align="right">4</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.5</td>
+<td align="right">2.8</td>
+<td align="right">4.6</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">2.8</td>
+<td align="right">4.5</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">3.3</td>
+<td align="right">4.7</td>
+<td align="right">1.6</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">2.4</td>
+<td align="right">3.3</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.6</td>
+<td align="right">2.9</td>
+<td align="right">4.6</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.2</td>
+<td align="right">2.7</td>
+<td align="right">3.9</td>
+<td align="right">1.4</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">2</td>
+<td align="right">3.5</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.9</td>
+<td align="right">3</td>
+<td align="right">4.2</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">2.2</td>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.1</td>
+<td align="right">2.9</td>
+<td align="right">4.7</td>
+<td align="right">1.4</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">2.9</td>
+<td align="right">3.6</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">3.1</td>
+<td align="right">4.4</td>
+<td align="right">1.4</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">3</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.8</td>
+<td align="right">2.7</td>
+<td align="right">4.1</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.2</td>
+<td align="right">2.2</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">2.5</td>
+<td align="right">3.9</td>
+<td align="right">1.1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.9</td>
+<td align="right">3.2</td>
+<td align="right">4.8</td>
+<td align="right">1.8</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.1</td>
+<td align="right">2.8</td>
+<td align="right">4</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.5</td>
+<td align="right">4.9</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.1</td>
+<td align="right">2.8</td>
+<td align="right">4.7</td>
+<td align="right">1.2</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">2.9</td>
+<td align="right">4.3</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.6</td>
+<td align="right">3</td>
+<td align="right">4.4</td>
+<td align="right">1.4</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.8</td>
+<td align="right">2.8</td>
+<td align="right">4.8</td>
+<td align="right">1.4</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">3</td>
+<td align="right">5</td>
+<td align="right">1.7</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">2.9</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">2.6</td>
+<td align="right">3.5</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.4</td>
+<td align="right">3.8</td>
+<td align="right">1.1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.4</td>
+<td align="right">3.7</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.8</td>
+<td align="right">2.7</td>
+<td align="right">3.9</td>
+<td align="right">1.2</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">2.7</td>
+<td align="right">5.1</td>
+<td align="right">1.6</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.4</td>
+<td align="right">3</td>
+<td align="right">4.5</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">3.4</td>
+<td align="right">4.5</td>
+<td align="right">1.6</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">3.1</td>
+<td align="right">4.7</td>
+<td align="right">1.5</td>
+<td align="right">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.3</td>
+<td align="right">4.4</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">3</td>
+<td align="right">4.1</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.5</td>
+<td align="right">4</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.5</td>
+<td align="right">2.6</td>
+<td align="right">4.4</td>
+<td align="right">1.2</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.1</td>
+<td align="right">3</td>
+<td align="right">4.6</td>
+<td align="right">1.4</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.8</td>
+<td align="right">2.6</td>
+<td align="right">4</td>
+<td align="right">1.2</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">2.3</td>
+<td align="right">3.3</td>
+<td align="right">1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">2.7</td>
+<td align="right">4.2</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">3</td>
+<td align="right">4.2</td>
+<td align="right">1.2</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">2.9</td>
+<td align="right">4.2</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.2</td>
+<td align="right">2.9</td>
+<td align="right">4.3</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.1</td>
+<td align="right">2.5</td>
+<td align="right">3</td>
+<td align="right">1.1</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">2.8</td>
+<td align="right">4.1</td>
+<td align="right">1.3</td>
+<td align="right">versicolor</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">3.3</td>
+<td align="right">6</td>
+<td align="right">2.5</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.8</td>
+<td align="right">2.7</td>
+<td align="right">5.1</td>
+<td align="right">1.9</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.1</td>
+<td align="right">3</td>
+<td align="right">5.9</td>
+<td align="right">2.1</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.9</td>
+<td align="right">5.6</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.5</td>
+<td align="right">3</td>
+<td align="right">5.8</td>
+<td align="right">2.2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.6</td>
+<td align="right">3</td>
+<td align="right">6.6</td>
+<td align="right">2.1</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">4.9</td>
+<td align="right">2.5</td>
+<td align="right">4.5</td>
+<td align="right">1.7</td>
+<td align="right">virginica</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">7.3</td>
+<td align="right">2.9</td>
+<td align="right">6.3</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">2.5</td>
+<td align="right">5.8</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.2</td>
+<td align="right">3.6</td>
+<td align="right">6.1</td>
+<td align="right">2.5</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.5</td>
+<td align="right">3.2</td>
+<td align="right">5.1</td>
+<td align="right">2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">2.7</td>
+<td align="right">5.3</td>
+<td align="right">1.9</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.8</td>
+<td align="right">3</td>
+<td align="right">5.5</td>
+<td align="right">2.1</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.7</td>
+<td align="right">2.5</td>
+<td align="right">5</td>
+<td align="right">2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.8</td>
+<td align="right">2.8</td>
+<td align="right">5.1</td>
+<td align="right">2.4</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">3.2</td>
+<td align="right">5.3</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.5</td>
+<td align="right">3</td>
+<td align="right">5.5</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.7</td>
+<td align="right">3.8</td>
+<td align="right">6.7</td>
+<td align="right">2.2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.7</td>
+<td align="right">2.6</td>
+<td align="right">6.9</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">2.2</td>
+<td align="right">5</td>
+<td align="right">1.5</td>
+<td align="right">virginica</td>
+<td align="center">versicolor</td>
+</tr>
+<tr>
+<td align="right">6.9</td>
+<td align="right">3.2</td>
+<td align="right">5.7</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.6</td>
+<td align="right">2.8</td>
+<td align="right">4.9</td>
+<td align="right">2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.7</td>
+<td align="right">2.8</td>
+<td align="right">6.7</td>
+<td align="right">2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.7</td>
+<td align="right">4.9</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">3.3</td>
+<td align="right">5.7</td>
+<td align="right">2.1</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.2</td>
+<td align="right">3.2</td>
+<td align="right">6</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.2</td>
+<td align="right">2.8</td>
+<td align="right">4.8</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.1</td>
+<td align="right">3</td>
+<td align="right">4.9</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">2.8</td>
+<td align="right">5.6</td>
+<td align="right">2.1</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.2</td>
+<td align="right">3</td>
+<td align="right">5.8</td>
+<td align="right">1.6</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.4</td>
+<td align="right">2.8</td>
+<td align="right">6.1</td>
+<td align="right">1.9</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.9</td>
+<td align="right">3.8</td>
+<td align="right">6.4</td>
+<td align="right">2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">2.8</td>
+<td align="right">5.6</td>
+<td align="right">2.2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.8</td>
+<td align="right">5.1</td>
+<td align="right">1.5</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.1</td>
+<td align="right">2.6</td>
+<td align="right">5.6</td>
+<td align="right">1.4</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">7.7</td>
+<td align="right">3</td>
+<td align="right">6.1</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">3.4</td>
+<td align="right">5.6</td>
+<td align="right">2.4</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.4</td>
+<td align="right">3.1</td>
+<td align="right">5.5</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">4.8</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.9</td>
+<td align="right">3.1</td>
+<td align="right">5.4</td>
+<td align="right">2.1</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">3.1</td>
+<td align="right">5.6</td>
+<td align="right">2.4</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.9</td>
+<td align="right">3.1</td>
+<td align="right">5.1</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.8</td>
+<td align="right">2.7</td>
+<td align="right">5.1</td>
+<td align="right">1.9</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.8</td>
+<td align="right">3.2</td>
+<td align="right">5.9</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">3.3</td>
+<td align="right">5.7</td>
+<td align="right">2.5</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.7</td>
+<td align="right">3</td>
+<td align="right">5.2</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.3</td>
+<td align="right">2.5</td>
+<td align="right">5</td>
+<td align="right">1.9</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.5</td>
+<td align="right">3</td>
+<td align="right">5.2</td>
+<td align="right">2</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">6.2</td>
+<td align="right">3.4</td>
+<td align="right">5.4</td>
+<td align="right">2.3</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="right">5.9</td>
+<td align="right">3</td>
+<td align="right">5.1</td>
+<td align="right">1.8</td>
+<td align="right">virginica</td>
+<td align="center">virginica</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="python">corrects = dataset_test.loc[dataset_test['class'] == dataset_test['predicted class (by predict())']].shape[0]
+print('Prediksi Training Bayes: %d of %d == %f %%' % (corrects, len(data), corrects / len(data) * 100))
+</code></pre>
+
+<pre><code class="python">Prediksi Training Bayes: 140 of 150 == 93.333333 %
+</code></pre>
+
+<h2 id="knn">KNN</h2>
+<h4 id="pengertian-knn">Pengertian KNN</h4>
+<p>K-nearest neighbors atau knn adalah algoritma yang berfungsi untuk melakukan klasifikasi suatu data berdasarkan data pembelajaran (<em>train data sets</em>), yang diambil dari k tetangga terdekatnya (<em>nearest neighbors</em>). Dengan k merupakan banyaknya tetangga terdekat.</p>
+<h5 id="a-cara-kerja-algoritma-k-nearest-neighbors-knn">A. Cara Kerja Algoritma K-Nearest Neighbors (KNN)</h5>
+<p>K-nearest neighbors melakukan klasifikasi dengan proyeksi data pembelajaran pada ruang berdimensi banyak. Ruang ini dibagi menjadi bagian-bagian yang merepresentasikan kriteria data pembelajaran. Setiap data pembelajaran direpresentasikan menjadi titik-titik <strong><em>c</em></strong> pada ruang dimensi banyak.</p>
+<table>
+<thead>
+<tr>
+<th align="center">sepal   length</th>
+<th align="center">sepal width</th>
+<th align="center">petal length</th>
+<th align="center">petal width</th>
+<th align="center">variety</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">sample data</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">2,4</td>
+<td align="center">3,3</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">Training   Data</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">a</td>
+<td align="center">b</td>
+<td align="center">c</td>
+<td align="center">d</td>
+<td align="center">class</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3,1</td>
+<td align="center">1,5</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3,1</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3</td>
+<td align="center">1,4</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3,1</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3</td>
+<td align="center">1,4</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,3</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,7</td>
+<td align="center">3,2</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,7</td>
+<td align="center">3,2</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,1</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,4</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,2</td>
+<td align="center">1,2</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3,4</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,2</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,4</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,4</td>
+<td align="center">1,6</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">3,4</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,4</td>
+<td align="center">1,4</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,3</td>
+<td align="center">1,7</td>
+<td align="center">0,5</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,5</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,5</td>
+<td align="center">1,4</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,5</td>
+<td align="center">1,3</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">3,5</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,8</td>
+<td align="center">3,4</td>
+<td align="center">1,9</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,6</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">3,6</td>
+<td align="center">1,4</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,4</td>
+<td align="center">3</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,4</td>
+<td align="center">3,2</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,4</td>
+<td align="center">2,9</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3,5</td>
+<td align="center">1,6</td>
+<td align="center">0,6</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,4</td>
+<td align="center">1,7</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,4</td>
+<td align="center">1,5</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,7</td>
+<td align="center">1,5</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,3</td>
+<td align="center">3,7</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,8</td>
+<td align="center">1,5</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,8</td>
+<td align="center">1,6</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,3</td>
+<td align="center">3</td>
+<td align="center">1,1</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">3,5</td>
+<td align="center">1,3</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,6</td>
+<td align="center">3,6</td>
+<td align="center">1</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,7</td>
+<td align="center">1,5</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">3,8</td>
+<td align="center">1,9</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">4,5</td>
+<td align="center">2,3</td>
+<td align="center">1,3</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,9</td>
+<td align="center">1,7</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3,9</td>
+<td align="center">1,3</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">4,1</td>
+<td align="center">1,5</td>
+<td align="center">0,1</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">3,8</td>
+<td align="center">1,7</td>
+<td align="center">0,3</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">4,2</td>
+<td align="center">1,4</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">4</td>
+<td align="center">1,2</td>
+<td align="center">0,2</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">4,4</td>
+<td align="center">1,5</td>
+<td align="center">0,4</td>
+<td align="center">Setosa</td>
+</tr>
+<tr>
+<td align="center">5,1</td>
+<td align="center">2,5</td>
+<td align="center">3</td>
+<td align="center">1,1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">2,3</td>
+<td align="center">3,3</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,6</td>
+<td align="center">3,5</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">3,5</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,9</td>
+<td align="center">3,6</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,4</td>
+<td align="center">3,7</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,4</td>
+<td align="center">3,8</td>
+<td align="center">1,1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,5</td>
+<td align="center">3,9</td>
+<td align="center">1,1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,2</td>
+<td align="center">2,7</td>
+<td align="center">3,9</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">3,9</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,5</td>
+<td align="center">4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,6</td>
+<td align="center">4</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">4,1</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,3</td>
+<td align="center">4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">3</td>
+<td align="center">4,1</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,8</td>
+<td align="center">4,1</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,2</td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">3</td>
+<td align="center">4,2</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,8</td>
+<td align="center">4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,7</td>
+<td align="center">4,2</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,9</td>
+<td align="center">4,2</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,9</td>
+<td align="center">3</td>
+<td align="center">4,2</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,5</td>
+<td align="center">2,6</td>
+<td align="center">4,4</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">2,9</td>
+<td align="center">4,3</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,8</td>
+<td align="center">4,5</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,4</td>
+<td align="center">3</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">3</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,9</td>
+<td align="center">4,3</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">4,9</td>
+<td align="center">2,5</td>
+<td align="center">4,5</td>
+<td align="center">1,7</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,9</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,3</td>
+<td align="center">4,4</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">3,4</td>
+<td align="center">4,5</td>
+<td align="center">1,6</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">3</td>
+<td align="center">4,6</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,6</td>
+<td align="center">3</td>
+<td align="center">4,4</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,8</td>
+<td align="center">4,7</td>
+<td align="center">1,2</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">3,2</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,1</td>
+<td align="center">4,4</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,9</td>
+<td align="center">4,7</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">2,2</td>
+<td align="center">4,5</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,6</td>
+<td align="center">2,9</td>
+<td align="center">4,6</td>
+<td align="center">1,3</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">2,8</td>
+<td align="center">4,6</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">3,3</td>
+<td align="center">4,7</td>
+<td align="center">1,6</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,9</td>
+<td align="center">3,2</td>
+<td align="center">4,8</td>
+<td align="center">1,8</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">3</td>
+<td align="center">4,8</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,1</td>
+<td align="center">4,7</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">2,8</td>
+<td align="center">4,8</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,6</td>
+<td align="center">2,8</td>
+<td align="center">4,9</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,5</td>
+<td align="center">4,9</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">3</td>
+<td align="center">4,9</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,2</td>
+<td align="center">5</td>
+<td align="center">1,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,8</td>
+<td align="center">2,8</td>
+<td align="center">4,8</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">3,2</td>
+<td align="center">4,7</td>
+<td align="center">1,4</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,7</td>
+<td align="center">4,9</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2,7</td>
+<td align="center">5,1</td>
+<td align="center">1,6</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,7</td>
+<td align="center">2,5</td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,9</td>
+<td align="center">3</td>
+<td align="center">5,1</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,8</td>
+<td align="center">5,1</td>
+<td align="center">1,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">5,1</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,7</td>
+<td align="center">5,1</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,1</td>
+<td align="center">4,9</td>
+<td align="center">1,5</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,5</td>
+<td align="center">5</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3</td>
+<td align="center">5</td>
+<td align="center">1,7</td>
+<td align="center">Versicolor</td>
+</tr>
+<tr>
+<td align="center">5,8</td>
+<td align="center">2,8</td>
+<td align="center">5,1</td>
+<td align="center">2,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3,2</td>
+<td align="center">5,1</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3</td>
+<td align="center">5,2</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,7</td>
+<td align="center">5,3</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,1</td>
+<td align="center">2,6</td>
+<td align="center">5,6</td>
+<td align="center">1,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">3,1</td>
+<td align="center">5,5</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">3,2</td>
+<td align="center">5,3</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3</td>
+<td align="center">5,5</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3</td>
+<td align="center">5,2</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">2,9</td>
+<td align="center">5,6</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,1</td>
+<td align="center">5,1</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,2</td>
+<td align="center">3,4</td>
+<td align="center">5,4</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,8</td>
+<td align="center">5,6</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,1</td>
+<td align="center">5,4</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,4</td>
+<td align="center">2,8</td>
+<td align="center">5,6</td>
+<td align="center">2,2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,8</td>
+<td align="center">3</td>
+<td align="center">5,5</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">3,4</td>
+<td align="center">5,6</td>
+<td align="center">2,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,3</td>
+<td align="center">5,7</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">2,5</td>
+<td align="center">5,8</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,1</td>
+<td align="center">5,6</td>
+<td align="center">2,4</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,5</td>
+<td align="center">3</td>
+<td align="center">5,8</td>
+<td align="center">2,2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,2</td>
+<td align="center">3</td>
+<td align="center">5,8</td>
+<td align="center">1,6</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,9</td>
+<td align="center">3,2</td>
+<td align="center">5,7</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,7</td>
+<td align="center">3,3</td>
+<td align="center">5,7</td>
+<td align="center">2,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,8</td>
+<td align="center">3,2</td>
+<td align="center">5,9</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">6,3</td>
+<td align="center">3,3</td>
+<td align="center">6</td>
+<td align="center">2,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,1</td>
+<td align="center">3</td>
+<td align="center">5,9</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,2</td>
+<td align="center">3,2</td>
+<td align="center">6</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,4</td>
+<td align="center">2,8</td>
+<td align="center">6,1</td>
+<td align="center">1,9</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,3</td>
+<td align="center">2,9</td>
+<td align="center">6,3</td>
+<td align="center">1,8</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,2</td>
+<td align="center">3,6</td>
+<td align="center">6,1</td>
+<td align="center">2,5</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">3</td>
+<td align="center">6,1</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,9</td>
+<td align="center">3,8</td>
+<td align="center">6,4</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,6</td>
+<td align="center">3</td>
+<td align="center">6,6</td>
+<td align="center">2,1</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">2,8</td>
+<td align="center">6,7</td>
+<td align="center">2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">3,8</td>
+<td align="center">6,7</td>
+<td align="center">2,2</td>
+<td align="center">Virginica</td>
+</tr>
+<tr>
+<td align="center">7,7</td>
+<td align="center">2,6</td>
+<td align="center">6,9</td>
+<td align="center">2,3</td>
+<td align="center">Virginica</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">1.   Menghitung Jarak</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">(a-sd1)^2</td>
+<td align="center">(b-sd2)^2</td>
+<td align="center">(c-sd3)^2</td>
+<td align="center">(d-sd4)^2</td>
+<td align="center">SQRT</td>
+<td align="center">sqrt sorting</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,130728</td>
+<td align="center">0,141421356</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,147091</td>
+<td align="center">0,387298335</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,49</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,007486</td>
+<td align="center">0,458257569</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">1,974842</td>
+<td align="center">0,721110255</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">0,81</td>
+<td align="center">2,188607</td>
+<td align="center">0,787400787</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,090454</td>
+<td align="center">0,836660027</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">0,49</td>
+<td align="center">2,114237</td>
+<td align="center">0,848528137</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,81</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,251666</td>
+<td align="center">0,932737905</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,64</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,051828</td>
+<td align="center">0,959166305</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,306513</td>
+<td align="center">0,974679434</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,111871</td>
+<td align="center">0,974679434</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,211334</td>
+<td align="center">1,140175425</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,64</td>
+<td align="center">4,41</td>
+<td align="center">0,64</td>
+<td align="center">2,387467</td>
+<td align="center">1,174734012</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,130728</td>
+<td align="center">1,216552506</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">0,64</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,231591</td>
+<td align="center">1,236931688</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,218107</td>
+<td align="center">1,240967365</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">2,89</td>
+<td align="center">0,36</td>
+<td align="center">2,063977</td>
+<td align="center">1,256980509</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,310844</td>
+<td align="center">1,284523258</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1</td>
+<td align="center">3,61</td>
+<td align="center">0,49</td>
+<td align="center">2,278157</td>
+<td align="center">1,319090596</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,81</td>
+<td align="center">2,56</td>
+<td align="center">0,25</td>
+<td align="center">1,913113</td>
+<td align="center">1,337908816</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,21</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,345208</td>
+<td align="center">1,360147051</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,21</td>
+<td align="center">3,61</td>
+<td align="center">0,49</td>
+<td align="center">2,313007</td>
+<td align="center">1,392838828</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1,21</td>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">2,389561</td>
+<td align="center">1,476482306</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1,21</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,275961</td>
+<td align="center">1,516575089</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1</td>
+<td align="center">1,96</td>
+<td align="center">0,64</td>
+<td align="center">1,9</td>
+<td align="center">1,526433752</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1,44</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,387467</td>
+<td align="center">1,555634919</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1,44</td>
+<td align="center">3,61</td>
+<td align="center">0,81</td>
+<td align="center">2,420744</td>
+<td align="center">1,593737745</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,36</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,291288</td>
+<td align="center">1,740689519</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,351595</td>
+<td align="center">1,774823935</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,25</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,179449</td>
+<td align="center">1,808314132</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">1,21</td>
+<td align="center">2,89</td>
+<td align="center">0,16</td>
+<td align="center">2,066398</td>
+<td align="center">1,849324201</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">2,109502</td>
+<td align="center">1,894729532</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,202272</td>
+<td align="center">1,897366596</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,69</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,308679</td>
+<td align="center">1,9</td>
+</tr>
+<tr>
+<td align="center">0,16</td>
+<td align="center">1,69</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,393742</td>
+<td align="center">1,910497317</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,96</td>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">2,393742</td>
+<td align="center">1,913112647</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,96</td>
+<td align="center">2,89</td>
+<td align="center">0,64</td>
+<td align="center">2,351595</td>
+<td align="center">1,95192213</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,36</td>
+<td align="center">4,84</td>
+<td align="center">0,81</td>
+<td align="center">2,523886</td>
+<td align="center">1,974841766</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">1,21</td>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">2,491987</td>
+<td align="center">2,002498439</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">1,44</td>
+<td align="center">5,29</td>
+<td align="center">0,64</td>
+<td align="center">2,7313</td>
+<td align="center">2,00748599</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">1,69</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,412468</td>
+<td align="center">2,051828453</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">1,96</td>
+<td align="center">1,96</td>
+<td align="center">0,36</td>
+<td align="center">2,078461</td>
+<td align="center">2,051828453</td>
+</tr>
+<tr>
+<td align="center">0,16</td>
+<td align="center">0,01</td>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">2,158703</td>
+<td align="center">2,063976744</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">2,25</td>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">2,328089</td>
+<td align="center">2,066397832</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">2,25</td>
+<td align="center">4</td>
+<td align="center">0,36</td>
+<td align="center">2,61916</td>
+<td align="center">2,078460969</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">2,89</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,651415</td>
+<td align="center">2,090454496</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">1,96</td>
+<td align="center">2,56</td>
+<td align="center">0,49</td>
+<td align="center">2,376973</td>
+<td align="center">2,095232684</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">3,24</td>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">2,801785</td>
+<td align="center">2,109502311</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">2,56</td>
+<td align="center">4,41</td>
+<td align="center">0,64</td>
+<td align="center">2,901724</td>
+<td align="center">2,111871208</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,87054</td>
+<td align="center">2,111871208</td>
+</tr>
+<tr>
+<td align="center">0,04</td>
+<td align="center">0,01</td>
+<td align="center">0,09</td>
+<td align="center">0,01</td>
+<td align="center">0,387298</td>
+<td align="center">2,114237451</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,01</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0,141421</td>
+<td align="center">2,128379665</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,04</td>
+<td align="center">0,04</td>
+<td align="center">0</td>
+<td align="center">0,848528</td>
+<td align="center">2,130727575</td>
+</tr>
+<tr>
+<td align="center">0,01</td>
+<td align="center">0,16</td>
+<td align="center">0,04</td>
+<td align="center">0</td>
+<td align="center">0,458258</td>
+<td align="center">2,130727575</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,25</td>
+<td align="center">0,09</td>
+<td align="center">0,09</td>
+<td align="center">0,959166</td>
+<td align="center">2,130727575</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0</td>
+<td align="center">0,16</td>
+<td align="center">0</td>
+<td align="center">0,72111</td>
+<td align="center">2,140093456</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0</td>
+<td align="center">0,25</td>
+<td align="center">0,01</td>
+<td align="center">0,787401</td>
+<td align="center">2,147091055</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,01</td>
+<td align="center">0,36</td>
+<td align="center">0,01</td>
+<td align="center">0,932738</td>
+<td align="center">2,149418526</td>
+</tr>
+<tr>
+<td align="center">0,09</td>
+<td align="center">0,09</td>
+<td align="center">0,36</td>
+<td align="center">0,16</td>
+<td align="center">0,83666</td>
+<td align="center">2,158703314</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">0,36</td>
+<td align="center">0,04</td>
+<td align="center">1,140175</td>
+<td align="center">2,158703314</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,01</td>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">0,974679</td>
+<td align="center">2,177154106</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,04</td>
+<td align="center">0,49</td>
+<td align="center">0,04</td>
+<td align="center">1,174734</td>
+<td align="center">2,179449472</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">0,64</td>
+<td align="center">0</td>
+<td align="center">1,240967</td>
+<td align="center">2,186321111</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,01</td>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">0,974679</td>
+<td align="center">2,188606863</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,36</td>
+<td align="center">0,64</td>
+<td align="center">0,09</td>
+<td align="center">1,256981</td>
+<td align="center">2,202271555</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,16</td>
+<td align="center">0,64</td>
+<td align="center">0,09</td>
+<td align="center">1,236932</td>
+<td align="center">2,211334439</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,04</td>
+<td align="center">0,49</td>
+<td align="center">0</td>
+<td align="center">1,319091</td>
+<td align="center">2,213594362</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,36</td>
+<td align="center">0,81</td>
+<td align="center">0,04</td>
+<td align="center">1,360147</td>
+<td align="center">2,218107301</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,16</td>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">1,476482</td>
+<td align="center">2,218107301</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,09</td>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">1,216553</td>
+<td align="center">2,224859546</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,25</td>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">1,337909</td>
+<td align="center">2,224859546</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0,36</td>
+<td align="center">0,81</td>
+<td align="center">0,25</td>
+<td align="center">1,555635</td>
+<td align="center">2,23159136</td>
+</tr>
+<tr>
+<td align="center">0,36</td>
+<td align="center">0,04</td>
+<td align="center">1,21</td>
+<td align="center">0,04</td>
+<td align="center">1,284523</td>
+<td align="center">2,236067977</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">0,09</td>
+<td align="center">1,74069</td>
+<td align="center">2,25166605</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,16</td>
+<td align="center">1,44</td>
+<td align="center">0,09</td>
+<td align="center">1,526434</td>
+<td align="center">2,256102835</td>
+</tr>
+<tr>
+<td align="center">0,25</td>
+<td align="center">0,36</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,516575</td>
+<td align="center">2,258317958</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,36</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,593738</td>
+<td align="center">2,275961335</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,25</td>
+<td align="center">1</td>
+<td align="center">0,09</td>
+<td align="center">1,89473</td>
+<td align="center">2,27815715</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">0,01</td>
+<td align="center">1,44</td>
+<td align="center">0,49</td>
+<td align="center">1,392839</td>
+<td align="center">2,289104628</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,25</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,774824</td>
+<td align="center">2,291287847</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,01</td>
+<td align="center">1,21</td>
+<td align="center">0,09</td>
+<td align="center">1,808314</td>
+<td align="center">2,291287847</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">1</td>
+<td align="center">1,44</td>
+<td align="center">0,36</td>
+<td align="center">2,002498</td>
+<td align="center">2,306512519</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,36</td>
+<td align="center">1,69</td>
+<td align="center">0,16</td>
+<td align="center">1,910497</td>
+<td align="center">2,308679276</td>
+</tr>
+<tr>
+<td align="center">2,89</td>
+<td align="center">0,36</td>
+<td align="center">1,21</td>
+<td align="center">0,16</td>
+<td align="center">2,149419</td>
+<td align="center">2,310844002</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,16</td>
+<td align="center">1,96</td>
+<td align="center">0,04</td>
+<td align="center">1,897367</td>
+<td align="center">2,313006701</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">2,140093</td>
+<td align="center">2,328089345</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">1,21</td>
+<td align="center">0,16</td>
+<td align="center">2,258318</td>
+<td align="center">2,34520788</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,96</td>
+<td align="center">0,16</td>
+<td align="center">1,951922</td>
+<td align="center">2,351595203</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">0,04</td>
+<td align="center">1,44</td>
+<td align="center">0,25</td>
+<td align="center">1,849324</td>
+<td align="center">2,351595203</td>
+</tr>
+<tr>
+<td align="center">2,89</td>
+<td align="center">0,25</td>
+<td align="center">1,69</td>
+<td align="center">0,09</td>
+<td align="center">2,218107</td>
+<td align="center">2,368543856</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,16</td>
+<td align="center">1,69</td>
+<td align="center">0,25</td>
+<td align="center">2,158703</td>
+<td align="center">2,376972865</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,81</td>
+<td align="center">1,96</td>
+<td align="center">0,36</td>
+<td align="center">2,256103</td>
+<td align="center">2,38117618</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0,64</td>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">2,12838</td>
+<td align="center">2,387467277</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,36</td>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">2,111871</td>
+<td align="center">2,387467277</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">1,96</td>
+<td align="center">0,25</td>
+<td align="center">2,437212</td>
+<td align="center">2,389560629</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">0,16</td>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">2,177154</td>
+<td align="center">2,393741841</td>
+</tr>
+<tr>
+<td align="center">0,49</td>
+<td align="center">0,16</td>
+<td align="center">2,56</td>
+<td align="center">1</td>
+<td align="center">2,051828</td>
+<td align="center">2,393741841</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,01</td>
+<td align="center">2,56</td>
+<td align="center">0,25</td>
+<td align="center">2,186321</td>
+<td align="center">2,412467616</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,36</td>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">2,236068</td>
+<td align="center">2,420743687</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,04</td>
+<td align="center">2,89</td>
+<td align="center">0,25</td>
+<td align="center">2,095233</td>
+<td align="center">2,437211521</td>
+</tr>
+<tr>
+<td align="center">3,61</td>
+<td align="center">0,16</td>
+<td align="center">2,25</td>
+<td align="center">0,16</td>
+<td align="center">2,485961</td>
+<td align="center">2,48394847</td>
+</tr>
+<tr>
+<td align="center">4,41</td>
+<td align="center">0,64</td>
+<td align="center">1,96</td>
+<td align="center">0,16</td>
+<td align="center">2,677686</td>
+<td align="center">2,485960579</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,09</td>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">2,291288</td>
+<td align="center">2,491987159</td>
+</tr>
+<tr>
+<td align="center">1,21</td>
+<td align="center">0,09</td>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,213594</td>
+<td align="center">2,523885893</td>
+</tr>
+<tr>
+<td align="center">0,64</td>
+<td align="center">0,01</td>
+<td align="center">2,89</td>
+<td align="center">1</td>
+<td align="center">2,130728</td>
+<td align="center">2,619160171</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0,36</td>
+<td align="center">3,24</td>
+<td align="center">0,64</td>
+<td align="center">2,289105</td>
+<td align="center">2,632489316</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,16</td>
+<td align="center">3,24</td>
+<td align="center">0,25</td>
+<td align="center">2,368544</td>
+<td align="center">2,641968963</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,22486</td>
+<td align="center">2,651414717</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,09</td>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">2,22486</td>
+<td align="center">2,673948391</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">2,56</td>
+<td align="center">0,25</td>
+<td align="center">2,701851</td>
+<td align="center">2,677685568</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,01</td>
+<td align="center">2,89</td>
+<td align="center">0,81</td>
+<td align="center">2,381176</td>
+<td align="center">2,701851217</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">2,89</td>
+<td align="center">0,49</td>
+<td align="center">2,641969</td>
+<td align="center">2,727636339</td>
+</tr>
+<tr>
+<td align="center">0,81</td>
+<td align="center">0,16</td>
+<td align="center">3,24</td>
+<td align="center">1,96</td>
+<td align="center">2,483948</td>
+<td align="center">2,731300057</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,64</td>
+<td align="center">3,24</td>
+<td align="center">1</td>
+<td align="center">2,727636</td>
+<td align="center">2,744084547</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">1</td>
+<td align="center">2,744085</td>
+<td align="center">2,801785145</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,09</td>
+<td align="center">4</td>
+<td align="center">0,81</td>
+<td align="center">2,673948</td>
+<td align="center">2,853068524</td>
+</tr>
+<tr>
+<td align="center">1,44</td>
+<td align="center">0,04</td>
+<td align="center">5,29</td>
+<td align="center">0,16</td>
+<td align="center">2,632489</td>
+<td align="center">2,867054237</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,49</td>
+<td align="center">4,84</td>
+<td align="center">0,64</td>
+<td align="center">2,867054</td>
+<td align="center">2,870540019</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,64</td>
+<td align="center">4</td>
+<td align="center">1,69</td>
+<td align="center">2,929164</td>
+<td align="center">2,898275349</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">4,84</td>
+<td align="center">0,64</td>
+<td align="center">2,898275</td>
+<td align="center">2,901723626</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,36</td>
+<td align="center">3,61</td>
+<td align="center">1,69</td>
+<td align="center">2,983287</td>
+<td align="center">2,929163703</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,25</td>
+<td align="center">5,29</td>
+<td align="center">0,64</td>
+<td align="center">2,853069</td>
+<td align="center">2,964793416</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">3,24</td>
+<td align="center">1,69</td>
+<td align="center">3,069202</td>
+<td align="center">2,983286778</td>
+</tr>
+<tr>
+<td align="center">1,69</td>
+<td align="center">1</td>
+<td align="center">4,41</td>
+<td align="center">1,69</td>
+<td align="center">2,964793</td>
+<td align="center">2,984962311</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,16</td>
+<td align="center">5,29</td>
+<td align="center">1,21</td>
+<td align="center">2,984962</td>
+<td align="center">3,023243292</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,49</td>
+<td align="center">4,41</td>
+<td align="center">1,21</td>
+<td align="center">3,179623</td>
+<td align="center">3,069201851</td>
+</tr>
+<tr>
+<td align="center">2,25</td>
+<td align="center">0,16</td>
+<td align="center">5,29</td>
+<td align="center">1,44</td>
+<td align="center">3,023243</td>
+<td align="center">3,165438358</td>
+</tr>
+<tr>
+<td align="center">3,61</td>
+<td align="center">0,36</td>
+<td align="center">4,84</td>
+<td align="center">1,21</td>
+<td align="center">3,165438</td>
+<td align="center">3,179622619</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">1</td>
+<td align="center">5,29</td>
+<td align="center">1,96</td>
+<td align="center">3,195309</td>
+<td align="center">3,184336666</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">5,76</td>
+<td align="center">1,21</td>
+<td align="center">3,319639</td>
+<td align="center">3,195309062</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,01</td>
+<td align="center">6,25</td>
+<td align="center">0,64</td>
+<td align="center">3,184337</td>
+<td align="center">3,257299495</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,49</td>
+<td align="center">5,29</td>
+<td align="center">1,96</td>
+<td align="center">3,313608</td>
+<td align="center">3,313608305</td>
+</tr>
+<tr>
+<td align="center">2,56</td>
+<td align="center">0,36</td>
+<td align="center">6,25</td>
+<td align="center">1,44</td>
+<td align="center">3,257299</td>
+<td align="center">3,319638535</td>
+</tr>
+<tr>
+<td align="center">5,29</td>
+<td align="center">0,36</td>
+<td align="center">6,25</td>
+<td align="center">0,36</td>
+<td align="center">3,501428</td>
+<td align="center">3,472751071</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,64</td>
+<td align="center">5,76</td>
+<td align="center">1,69</td>
+<td align="center">3,477068</td>
+<td align="center">3,47706773</td>
+</tr>
+<tr>
+<td align="center">3,24</td>
+<td align="center">0,81</td>
+<td align="center">5,76</td>
+<td align="center">2,25</td>
+<td align="center">3,472751</td>
+<td align="center">3,50142828</td>
+</tr>
+<tr>
+<td align="center">3,61</td>
+<td align="center">0,64</td>
+<td align="center">6,76</td>
+<td align="center">1,69</td>
+<td align="center">3,563706</td>
+<td align="center">3,508560959</td>
+</tr>
+<tr>
+<td align="center">1,96</td>
+<td align="center">0,81</td>
+<td align="center">7,29</td>
+<td align="center">2,25</td>
+<td align="center">3,508561</td>
+<td align="center">3,563705936</td>
+</tr>
+<tr>
+<td align="center">4,84</td>
+<td align="center">0,36</td>
+<td align="center">6,76</td>
+<td align="center">1,21</td>
+<td align="center">3,629049</td>
+<td align="center">3,629049462</td>
+</tr>
+<tr>
+<td align="center">5,29</td>
+<td align="center">0,64</td>
+<td align="center">7,29</td>
+<td align="center">0,64</td>
+<td align="center">3,722902</td>
+<td align="center">3,722902094</td>
+</tr>
+<tr>
+<td align="center">6,25</td>
+<td align="center">0,16</td>
+<td align="center">7,84</td>
+<td align="center">0,81</td>
+<td align="center">3,880722</td>
+<td align="center">3,880721582</td>
+</tr>
+<tr>
+<td align="center">5,76</td>
+<td align="center">0,25</td>
+<td align="center">9</td>
+<td align="center">0,64</td>
+<td align="center">3,956008</td>
+<td align="center">3,956008089</td>
+</tr>
+<tr>
+<td align="center">5,29</td>
+<td align="center">1,44</td>
+<td align="center">7,84</td>
+<td align="center">2,25</td>
+<td align="center">4,101219</td>
+<td align="center">4,101219331</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">0,36</td>
+<td align="center">7,84</td>
+<td align="center">1,69</td>
+<td align="center">4,210701</td>
+<td align="center">4,210700654</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">1,96</td>
+<td align="center">9,61</td>
+<td align="center">1</td>
+<td align="center">4,644351</td>
+<td align="center">4,444097209</td>
+</tr>
+<tr>
+<td align="center">7,29</td>
+<td align="center">0,36</td>
+<td align="center">10,89</td>
+<td align="center">1,21</td>
+<td align="center">4,444097</td>
+<td align="center">4,53431362</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">0,16</td>
+<td align="center">11,56</td>
+<td align="center">1</td>
+<td align="center">4,534314</td>
+<td align="center">4,644351408</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">1,96</td>
+<td align="center">11,56</td>
+<td align="center">1,44</td>
+<td align="center">4,774935</td>
+<td align="center">4,746577715</td>
+</tr>
+<tr>
+<td align="center">7,84</td>
+<td align="center">0,04</td>
+<td align="center">12,96</td>
+<td align="center">1,69</td>
+<td align="center">4,746578</td>
+<td align="center">4,774934555</td>
+</tr>
+</tbody>
+</table>
+<p>Class : Versicolor</p>
+<table>
+<thead>
+<tr>
+<th align="center">K=5</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">e</td>
+<td align="center">1/e</td>
+<td align="center">setosa</td>
+<td align="center">versicolor</td>
+<td align="center">virginica</td>
+</tr>
+<tr>
+<td align="center">0,141421</td>
+<td align="center">7,07106782</td>
+<td align="center">0</td>
+<td align="center">7,07106782</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,387298</td>
+<td align="center">2,58198889</td>
+<td align="center">0</td>
+<td align="center">2,58198889</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,458258</td>
+<td align="center">2,1821789</td>
+<td align="center">0</td>
+<td align="center">2,1821789</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,72111</td>
+<td align="center">1,38675049</td>
+<td align="center">0</td>
+<td align="center">1,38675049</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0,787401</td>
+<td align="center">1,27000127</td>
+<td align="center">0</td>
+<td align="center">1,27000127</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="fuzzy-c-means">FUZZY C MEANS</h4>
+<p>​   K-Means Clustering adalah salah satu algoritma klasifikasi data yang cukup banyak dipakai untuk memecahkan masalah. Hanya saja metode tersebut tidak memiliki nilai pengembalian berupa sebuah nilai pembanding untuk masing-masing cluster, sehingga digunakan algoritma Fuzzy untuk menghitung skor dari sebuah data. Berikut untuk cara perhitungan data dengan fuzzy c means:</p>
+<ol>
+<li>
+<p>Input data yang akan dicluster <em>X</em>, berupa matriks berukuran <em>n x m</em> (<em>n</em>=jumlah sample data, <em>m</em>=atribut setiap data). <em>Xij</em>=data sample ke-<em>i</em> (<em>i</em>=1,2,…,<em>n</em>), atribut ke-<em>j</em> (<em>j</em>=1,2,…,<em>m</em>).</p>
+</li>
+<li>
+<p>Tentukan :</p>
+</li>
+<li>
+<p>Jumlah cluster                                     = <em>c</em></p>
+</li>
+<li>Pangkat                                                  = <em>w</em></li>
+<li>Maksimum iterasi                                = <em>MaxIter</em></li>
+<li>Error terkecil yang diharapkan         = <em>ξ</em></li>
+<li>Fungsi obyektif awal                            = <em>Po</em> =0</li>
+<li>
+<p>Iterasi awal                                             = <em>t</em>   =</p>
+</li>
+<li>
+<p>Bangkitkan nilai acak μik, i=1,2,…,n; k=1,2,…,c sebagai elemen-elemen matriks partisi awal μik. μik adalah derajat keanggotaan yang merujuk pada seberapa besar kemungkinan suatu data bisa menjadi anggota ke dalam suatu cluster.Posisi dan nilai matriks dibangun secara random. Dimana nilai keangotaan terletak pada interval 0 sampai dengan 1. Pada posisi awal matriks partisi U masih belum akurat begitu juga pusat clusternya. Sehingga kecendrungan data untuk masuk suatu cluster juga belum akurat.</p>
+</li>
+<li>
+<p>Hitung pusat <em>Cluster</em> ke-k: <em>Vkj</em> ,dengan <em>k</em>=1,2,…c dan <em>j</em>=1,2,…m. dimana <em>Xij</em>adalah variabel fuzzy yang digunakan dan <em>w</em> adalah bobot.</p>
+</li>
+<li>
+<p>Hitung fungsi obyektif pada iterasi ke-<em>t</em>, Pt</p>
+</li>
+<li>
+<p>Perhitungan fungsi objektif <em>Pt</em> dimana nilai variabel fuzzy <em>Xij</em> di kurang dengan dengan pusat cluster <em>Vkj</em>kemudian hasil pengurangannya di kuadradkan lalu masing-masing hasil kuadrad di jumlahkan untuk dikali dengan kuadrad dari derajat keanggotaan <em>μ</em>ik untuk tiap <em>cluster</em>. Setelah itu jumlahkan semua nilai di semua <em>cluster</em> untuk mendapatkan fungsi objektif <em>Pt.</em></p>
+</li>
+<li>
+<p>Hitung perubahan matriks partisi, </p>
+</li>
+<li>
+<ol>
+<li>dengan: <em>i</em>=1,2,…n dan <em>k</em>=1,2,..<em>c</em>.
+      Untuk mencari perubahan matrik partisi <em>μ</em>ik,pengurangan nilai variabel fuzzy <em>Xij</em> di lakukan kembali terhadap pusat cluster <em>Vkj</em>lalu dikuadradkan.  Kemudian dijumlahkan lalu dipangkatkan dengan -1/(<em>w</em>-1) dengan bobot, <em>w</em>=2 hasilnya setiap data dipangkatkan dengan -1. Setelah proses perhitungan dilakukan, normalisasikan semua data derajat keanggotaan baru dengan cara menjumlahkan derajat keanggotaan baru <em>k</em>=1,…<em>c</em>, hasilnya kemudian dibagi dengan derajat keanggotaan yang baru. Proses ini dilakukan agar derajat keanggotaan yang baru mempunyai rentang antara 0 dan tidak lebih dari 1.</li>
+</ol>
+</li>
+<li></li>
+<li>
+<p>Cek kondisi berhenti:a)    jika:( <em>|Pt – Pt-1 |&lt; ξ</em>) atau (<em>t</em>&gt;maxIter) maka berhenti.b)   jika tidak, <em>t=t</em>+1, ulangi langkah ke-4.</p>
+</li>
+</ol>
+<p>codingnya:</p>
+<pre><code class="python">import pandas as pd
+from pandas import DataFrame
+import random
+import numpy as np
+from IPython.display import HTML, display
+from tabulate import tabulate
+from math import log
+from sklearn.feature_selection import mutual_info_classif
+
+def table(df): display(HTML(tabulate(df, tablefmt='html', headers='keys', showindex=False)))
+
+</code></pre>
+
+<pre><code class="python">Data = read_csv('leaf.csv', sep=',')
+Data = Data[['Eccentricity','Solidity', 'Lobedness', 'Entropy']].sample(6, random_state=42)
+D = Data.values
+print(&quot;Table (D) &gt;&gt;&quot;)
+table(D)
+
+</code></pre>
+
+<pre><code class="python">n, m, c, w, T, e, P0, t = *D.shape, 3, 2, 10, 0.1, 0, 1
+print(&quot;Variables &gt;&gt;&quot;)
+print(&quot; n = %d\n m = %d\n c = %d\n w = %d\n T = %d\n e = %f\n P0 = %d\n t = %d&quot; % (n, m, c, w, T, e, P0, t))
+Variables &gt;&gt;
+ n = 6
+ m = 5
+ c = 3
+ w = 2
+ T = 10
+ e = 0.100000
+ P0 = 0
+ t = 1
+
+</code></pre>
+
+<pre><code class="python">random.seed(42)
+U = np.array([[random.uniform(0, 1) for _ in range(c)] for _ in range(n)])
+print(&quot;U &gt;&gt;\n&quot;)
+print(U)
+</code></pre>
+
+<pre><code class="python"># Caution: NP Array is math-agnostic (column-by-column)
+def cluster(U, D, x, y): return sum([U[i,y]**w*D[i,x] for i in range(n)])/sum([U[i,y]**w for i in range(n)])
+V = np.array([[cluster(U,D,x,y) for x in range(m)] for y in range(c)])
+print(&quot;V &gt;&gt;\n&quot;)
+print(V)
+</code></pre>
+
+<pre><code class="python">#perhitungan ulang matriks derajat klaster
+def converge(V,D,i,k): return (sum([(D[i,j]-V[k,j])**2 for j in range(m)])**(-1/(w-1)))/sum([sum([(D[i,j]-V[k,j])**2 for j in range(m)])**(-1/(w-1)) for k in range(c)])
+print(&quot;U &gt;&gt;\n&quot;)
+np.array([[converge(V,D,i,k) for k in range(c)] for i in range(n)])
+</code></pre>
+
+<pre><code class="python">#perhitungan literasi pemberhentian
+def iterate(U):
+    V = np.array([[cluster(U, D, x, y) for x in range(m)] for y in range(c)])
+    return np.array([[converge(V,D,i,k) for k in range(c)] for i in range(n)]), objective(V,U,D)
+
+def fuzzyCM(U):
+    #U = np.array([[random.uniform(0, 1) for _ in range(c)] for _ in range(n)])
+
+    U, P2, P, t = *iterate(U), 0, 1
+    while abs(P2 - P) &gt; e and t &lt; T:
+        U, P2, P, t = *iterate(U), P2, t+1
+    return U, t
+
+FuzzyResult, FuzzyIters = fuzzyCM(U)
+print(&quot;Iterating %d times, fuzzy result &gt;&gt; \n&quot; % FuzzyIters)
+print(FuzzyResult)
+</code></pre>
+
+<pre><code class="python">#pengambilan rata-rata/nilai besar pada klaster
+table(DataFrame([D[i].tolist()+[np.argmax(FuzzyResult[i].tolist())] for i in range(n)], columns=Data.columns.tolist()+[&quot;Cluster Index&quot;]))
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="center">6</th>
+<th align="center">0</th>
+<th align="center">75</th>
+<th align="center">200</th>
+<th>16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">63</td>
+<td align="center">200</td>
+<td>10</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">66</td>
+<td align="center">50</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">57</td>
+<td align="center">200</td>
+<td>9</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">81</td>
+<td align="center">200</td>
+<td>18</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">67</td>
+<td align="center">200</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">O-Ring</th>
+<th align="center">Thermal</th>
+<th align="center">Temperature</th>
+<th align="right">Leak</th>
+<th align="center">Temporal</th>
+<th align="center">Cluster Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">75</td>
+<td align="right">200</td>
+<td align="center">16</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">63</td>
+<td align="right">200</td>
+<td align="center">10</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">66</td>
+<td align="right">50</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">57</td>
+<td align="right">200</td>
+<td align="center">9</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">81</td>
+<td align="right">200</td>
+<td align="center">18</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">67</td>
+<td align="right">200</td>
+<td align="center">13</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-11-14 04:09:51
+-->
