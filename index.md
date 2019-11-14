@@ -1,3 +1,5 @@
+
+
 ## Nama : Oktaviana Dwi Sujatmiko
 
 ## NIM : 180411100021
@@ -941,3 +943,146 @@ Class : Versicolor
 | 0,458258 | 2,1821789  |   0    | 2,1821789  |     0     |
 | 0,72111  | 1,38675049 |   0    | 1,38675049 |     0     |
 | 0,787401 | 1,27000127 |   0    | 1,27000127 |     0     |
+
+
+
+#### FUZZY C MEANS
+
+​	K-Means Clustering adalah salah satu algoritma klasifikasi data yang cukup banyak dipakai untuk memecahkan masalah. Hanya saja metode tersebut tidak memiliki nilai pengembalian berupa sebuah nilai pembanding untuk masing-masing cluster, sehingga digunakan algoritma Fuzzy untuk menghitung skor dari sebuah data. Berikut untuk cara perhitungan data dengan fuzzy c means:
+
+1. Input data yang akan dicluster *X*, berupa matriks berukuran *n x m* (*n*=jumlah sample data, *m*=atribut setiap data). *Xij*=data sample ke-*i* (*i*=1,2,…,*n*), atribut ke-*j* (*j*=1,2,…,*m*).
+
+2. Tentukan :
+
+   1. Jumlah cluster                                     = *c*
+   2. Pangkat                                                  = *w*
+   3. Maksimum iterasi                                = *MaxIter*
+   4. Error terkecil yang diharapkan         = *ξ*
+   5. Fungsi obyektif awal                            = *Po* =0
+   6. Iterasi awal                                             = *t*   =
+
+3. Bangkitkan nilai acak μik, i=1,2,…,n; k=1,2,…,c sebagai elemen-elemen matriks partisi awal μik. μik adalah derajat keanggotaan yang merujuk pada seberapa besar kemungkinan suatu data bisa menjadi anggota ke dalam suatu cluster.Posisi dan nilai matriks dibangun secara random. Dimana nilai keangotaan terletak pada interval 0 sampai dengan 1. Pada posisi awal matriks partisi U masih belum akurat begitu juga pusat clusternya. Sehingga kecendrungan data untuk masuk suatu cluster juga belum akurat.
+
+4. Hitung pusat *Cluster* ke-k: *Vkj* ,dengan *k*=1,2,…c dan *j*=1,2,…m. dimana *Xij*adalah variabel fuzzy yang digunakan dan *w* adalah bobot.
+
+5. Hitung fungsi obyektif pada iterasi ke-*t*, Pt
+
+6. Perhitungan fungsi objektif *Pt* dimana nilai variabel fuzzy *Xij* di kurang dengan dengan pusat cluster *Vkj*kemudian hasil pengurangannya di kuadradkan lalu masing-masing hasil kuadrad di jumlahkan untuk dikali dengan kuadrad dari derajat keanggotaan *μ*ik untuk tiap *cluster*. Setelah itu jumlahkan semua nilai di semua *cluster* untuk mendapatkan fungsi objektif *Pt.*
+
+7. Hitung perubahan matriks partisi, 
+
+8. 1. dengan: *i*=1,2,…n dan *k*=1,2,..*c*.
+      Untuk mencari perubahan matrik partisi *μ*ik,pengurangan nilai variabel fuzzy *Xij* di lakukan kembali terhadap pusat cluster *Vkj*lalu dikuadradkan.  Kemudian dijumlahkan lalu dipangkatkan dengan -1/(*w*-1) dengan bobot, *w*=2 hasilnya setiap data dipangkatkan dengan -1. Setelah proses perhitungan dilakukan, normalisasikan semua data derajat keanggotaan baru dengan cara menjumlahkan derajat keanggotaan baru *k*=1,…*c*, hasilnya kemudian dibagi dengan derajat keanggotaan yang baru. Proses ini dilakukan agar derajat keanggotaan yang baru mempunyai rentang antara 0 dan tidak lebih dari 1.
+
+   2. 
+
+8. Cek kondisi berhenti:a)    jika:( *|Pt – Pt-1 |< ξ*) atau (*t*>maxIter) maka berhenti.b)   jika tidak, *t=t*+1, ulangi langkah ke-4.
+
+codingnya:
+
+```python
+import pandas as pd
+from pandas import DataFrame
+import random
+import numpy as np
+from IPython.display import HTML, display
+from tabulate import tabulate
+from math import log
+from sklearn.feature_selection import mutual_info_classif
+
+def table(df): display(HTML(tabulate(df, tablefmt='html', headers='keys', showindex=False)))
+
+```
+
+```python
+Data = read_csv('leaf.csv', sep=',')
+Data = Data[['Eccentricity','Solidity', 'Lobedness', 'Entropy']].sample(6, random_state=42)
+D = Data.values
+print("Table (D) >>")
+table(D)
+
+```
+
+
+
+```python
+n, m, c, w, T, e, P0, t = *D.shape, 3, 2, 10, 0.1, 0, 1
+print("Variables >>")
+print(" n = %d\n m = %d\n c = %d\n w = %d\n T = %d\n e = %f\n P0 = %d\n t = %d" % (n, m, c, w, T, e, P0, t))
+Variables >>
+ n = 6
+ m = 5
+ c = 3
+ w = 2
+ T = 10
+ e = 0.100000
+ P0 = 0
+ t = 1
+
+```
+
+```python
+random.seed(42)
+U = np.array([[random.uniform(0, 1) for _ in range(c)] for _ in range(n)])
+print("U >>\n")
+print(U)
+```
+
+```python
+# Caution: NP Array is math-agnostic (column-by-column)
+def cluster(U, D, x, y): return sum([U[i,y]**w*D[i,x] for i in range(n)])/sum([U[i,y]**w for i in range(n)])
+V = np.array([[cluster(U,D,x,y) for x in range(m)] for y in range(c)])
+print("V >>\n")
+print(V)
+```
+
+
+
+```python
+#perhitungan ulang matriks derajat klaster
+def converge(V,D,i,k): return (sum([(D[i,j]-V[k,j])**2 for j in range(m)])**(-1/(w-1)))/sum([sum([(D[i,j]-V[k,j])**2 for j in range(m)])**(-1/(w-1)) for k in range(c)])
+print("U >>\n")
+np.array([[converge(V,D,i,k) for k in range(c)] for i in range(n)])
+```
+
+```python
+#perhitungan literasi pemberhentian
+def iterate(U):
+    V = np.array([[cluster(U, D, x, y) for x in range(m)] for y in range(c)])
+    return np.array([[converge(V,D,i,k) for k in range(c)] for i in range(n)]), objective(V,U,D)
+
+def fuzzyCM(U):
+    #U = np.array([[random.uniform(0, 1) for _ in range(c)] for _ in range(n)])
+
+    U, P2, P, t = *iterate(U), 0, 1
+    while abs(P2 - P) > e and t < T:
+        U, P2, P, t = *iterate(U), P2, t+1
+    return U, t
+
+FuzzyResult, FuzzyIters = fuzzyCM(U)
+print("Iterating %d times, fuzzy result >> \n" % FuzzyIters)
+print(FuzzyResult)
+```
+
+```python
+#pengambilan rata-rata/nilai besar pada klaster
+table(DataFrame([D[i].tolist()+[np.argmax(FuzzyResult[i].tolist())] for i in range(n)], columns=Data.columns.tolist()+["Cluster Index"]))
+```
+
+|  6   |  0   |  75  | 200  | 16   |
+| :--: | :--: | :--: | :--: | ---- |
+|  6   |  1   |  63  | 200  | 10   |
+|  6   |  0   |  66  |  50  | 1    |
+|  6   |  1   |  57  | 200  | 9    |
+|  6   |  0   |  81  | 200  | 18   |
+|  6   |  0   |  67  | 200  | 13   |
+
+| O-Ring | Thermal | Temperature | Leak | Temporal | Cluster Index |
+| :----: | :-----: | :---------: | ---: | :------: | :-----------: |
+|   6    |    0    |     75      |  200 |    16    |       2       |
+|   6    |    1    |     63      |  200 |    10    |       1       |
+|   6    |    0    |     66      |   50 |    1     |       0       |
+|   6    |    1    |     57      |  200 |    9     |       1       |
+|   6    |    0    |     81      |  200 |    18    |       2       |
+|   6    |    0    |     67      |  200 |    13    |       1       |
+
